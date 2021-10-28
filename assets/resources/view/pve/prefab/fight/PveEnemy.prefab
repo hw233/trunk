@@ -1,0 +1,854 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "",
+    "_objFlags": 0,
+    "_native": "",
+    "data": {
+      "__id__": 1
+    },
+    "optimizationPolicy": 0,
+    "asyncLoadAssets": false,
+    "readonly": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "PveEnemy",
+    "_objFlags": 0,
+    "_parent": null,
+    "_children": [
+      {
+        "__id__": 2
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 5
+      },
+      {
+        "__id__": 6
+      },
+      {
+        "__id__": 56
+      },
+      {
+        "__id__": 57
+      },
+      {
+        "__id__": 58
+      }
+    ],
+    "_prefab": {
+      "__id__": 60
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 97.31,
+      "height": 133.41
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 4,
+    "groupIndex": 4,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "spine",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 3
+      }
+    ],
+    "_prefab": {
+      "__id__": 4
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 4,
+    "groupIndex": 4,
+    "_id": ""
+  },
+  {
+    "__type__": "sp.Skeleton",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "7afd064b-113f-480e-b793-8817d19f63c3"
+      }
+    ],
+    "paused": false,
+    "defaultSkin": "",
+    "defaultAnimation": "",
+    "_preCacheMode": -1,
+    "_cacheMode": 0,
+    "loop": true,
+    "premultipliedAlpha": false,
+    "timeScale": 1,
+    "_accTime": 0,
+    "_playCount": 0,
+    "_frameCache": null,
+    "_curFrame": null,
+    "_skeletonCache": null,
+    "_animationName": null,
+    "_animationQueue": [],
+    "_headAniInfo": null,
+    "_playTimes": 0,
+    "_isAniComplete": true,
+    "_N$skeletonData": null,
+    "_N$_defaultCacheMode": 0,
+    "_N$debugSlots": false,
+    "_N$debugBones": false,
+    "_N$debugMesh": false,
+    "_N$useTint": false,
+    "_N$enableBatch": true,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__uuid__": "63dbbb10-8ef6-4bda-97c3-b21cd4338601"
+    },
+    "fileId": "78HbLQe0JNXZxMSQw0bFHv",
+    "sync": false
+  },
+  {
+    "__type__": "e71c5u7yrBAbbPDtGRwVTVP",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "spines": [
+      {
+        "__id__": 3
+      }
+    ],
+    "_id": ""
+  },
+  {
+    "__type__": "82c30TfLL5H/bhHcqHqJiuy",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "fsm": {
+      "__id__": 7
+    },
+    "syncActive": true,
+    "_persist": false,
+    "_id": ""
+  },
+  {
+    "__type__": "Fsm",
+    "fsmName": "FSM-PVE-ENEMY",
+    "fsmDescription": "PVE-ENEMY怪物状态控制",
+    "states": [
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 12
+      },
+      {
+        "__id__": 15
+      },
+      {
+        "__id__": 21
+      },
+      {
+        "__id__": 24
+      },
+      {
+        "__id__": 27
+      },
+      {
+        "__id__": 30
+      },
+      {
+        "__id__": 35
+      },
+      {
+        "__id__": 38
+      },
+      {
+        "__id__": 41
+      },
+      {
+        "__id__": 44
+      },
+      {
+        "__id__": 48
+      }
+    ],
+    "events": [],
+    "globalTransitions": [
+      {
+        "__id__": 51
+      },
+      {
+        "__id__": 52
+      },
+      {
+        "__id__": 53
+      },
+      {
+        "__id__": 54
+      },
+      {
+        "__id__": 55
+      }
+    ],
+    "startState": "Loader"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Loader",
+    "stateDescription": "资源加载",
+    "x": -395.62537499999996,
+    "y": -196.01024999999993,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 9
+      },
+      {
+        "__id__": 10
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 11
+      }
+    ]
+  },
+  {
+    "__type__": "PveEnemyLoadResAction",
+    "enabled": true,
+    "actionName": "PveEnemyLoadResAction",
+    "animation": 0,
+    "loop": true
+  },
+  {
+    "__type__": "PveFightInitAction",
+    "enabled": true,
+    "actionName": "PveFightInitAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Idle"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Idle",
+    "stateDescription": "待机状态",
+    "x": -184.1576250000001,
+    "y": -240.210125,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 13
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 14
+      }
+    ]
+  },
+  {
+    "__type__": "PveEnemyIdleAction",
+    "enabled": true,
+    "actionName": "PveEnemyIdleAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Walk"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Walk",
+    "stateDescription": "行走状态",
+    "x": 7,
+    "y": -106,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 16
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 17
+      },
+      {
+        "__id__": 18
+      },
+      {
+        "__id__": 19
+      },
+      {
+        "__id__": 20
+      }
+    ]
+  },
+  {
+    "__type__": "PveEnemyWalkAction",
+    "enabled": true,
+    "actionName": "PveEnemyWalkAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_MONSTER_WAIT",
+    "toState": "Idle"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_REATTACK",
+    "toState": "Search"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_ACTIVE_SKILL",
+    "toState": "ActiveSkill"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Arrival"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Die",
+    "stateDescription": "死亡状态",
+    "x": -226.147375,
+    "y": -62.057624999999916,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 22
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 23
+      }
+    ]
+  },
+  {
+    "__type__": "PveEnemyDieAction",
+    "enabled": true,
+    "actionName": "PveEnemyDieAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Destroy"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Arrival",
+    "stateDescription": "到达被保护对象",
+    "x": -182,
+    "y": 228.21875,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 25
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 26
+      }
+    ]
+  },
+  {
+    "__type__": "PveEnemyArrivalAction",
+    "enabled": true,
+    "actionName": "PveEnemyArrivalAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Destroy"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Attack",
+    "stateDescription": "反击",
+    "x": 10.077531249999993,
+    "y": -336.01384375,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 28
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 29
+      }
+    ]
+  },
+  {
+    "__type__": "PveFightAttackAction",
+    "enabled": true,
+    "actionName": "PveFightAttackAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Search"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Search",
+    "stateDescription": "查询技能",
+    "x": 350,
+    "y": -313,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 31
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 32
+      },
+      {
+        "__id__": 33
+      },
+      {
+        "__id__": 34
+      }
+    ]
+  },
+  {
+    "__type__": "PveEnemySearchAction",
+    "enabled": true,
+    "actionName": "PveEnemySearchAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_ATTACK",
+    "toState": "Attack"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_ACTIVE_SKILL",
+    "toState": "ActiveSkill"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Walk"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Destroy",
+    "stateDescription": "销毁",
+    "x": -408.88637500000004,
+    "y": 50.893249999999966,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 36
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 37
+      }
+    ]
+  },
+  {
+    "__type__": "PveFightDestroyAction",
+    "enabled": true,
+    "actionName": "PveFightDestroyAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": null
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Repel",
+    "stateDescription": "被击退",
+    "x": 369,
+    "y": 8,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 39
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 40
+      }
+    ]
+  },
+  {
+    "__type__": "WaitAction",
+    "enabled": true,
+    "actionName": "WaitAction",
+    "time": 100
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Walk"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Gate",
+    "stateDescription": "被传送",
+    "x": 314,
+    "y": 193.21875,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 42
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 43
+      }
+    ]
+  },
+  {
+    "__type__": "WaitAction",
+    "enabled": true,
+    "actionName": "WaitAction",
+    "time": 300
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Walk"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Custom",
+    "stateDescription": "外部自定义状态",
+    "x": 341,
+    "y": -164,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 45
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 46
+      },
+      {
+        "__id__": 47
+      }
+    ]
+  },
+  {
+    "__type__": "PveFightCustomAction",
+    "enabled": true,
+    "actionName": "PveFightCustomAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_END_CUSTOM",
+    "toState": "Walk"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Walk"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "ActiveSkill",
+    "stateDescription": "主动使用技能（目标为自己）",
+    "x": -0.5620249999998919,
+    "y": 224.72215000000006,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 49
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 50
+      }
+    ]
+  },
+  {
+    "__type__": "PveEnemyAttackAction",
+    "enabled": true,
+    "actionName": "PveEnemyAttackAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Walk"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_DIE",
+    "toState": "Die"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_IDLE",
+    "toState": "Destroy"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_REPEL",
+    "toState": "Repel"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_GATE",
+    "toState": "Gate"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_BEGIN_CUSTOM",
+    "toState": "Custom"
+  },
+  {
+    "__type__": "6b7e889/kBHj7Qn9zfEGs93",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "hideMode": 0,
+    "_isShow": null,
+    "isShowWheEnable": false,
+    "_hideMode": null,
+    "_action": null,
+    "startValue": 0,
+    "normalValue": 255,
+    "endValue": 0,
+    "showTime": 0.5,
+    "hideTime": 0.25,
+    "showDelay": 0,
+    "hideDelay": 0,
+    "ease": 3,
+    "hideEase": 3,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CircleCollider",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "tag": 0,
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_radius": 20,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.Button",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_normalMaterial": null,
+    "_grayMaterial": null,
+    "duration": 0.1,
+    "zoomScale": 1.2,
+    "clickEvents": [
+      {
+        "__id__": 59
+      }
+    ],
+    "_N$interactable": true,
+    "_N$enableAutoGrayEffect": false,
+    "_N$transition": 0,
+    "transition": 0,
+    "_N$normalColor": {
+      "__type__": "cc.Color",
+      "r": 214,
+      "g": 214,
+      "b": 214,
+      "a": 255
+    },
+    "_N$pressedColor": {
+      "__type__": "cc.Color",
+      "r": 211,
+      "g": 211,
+      "b": 211,
+      "a": 255
+    },
+    "pressedColor": {
+      "__type__": "cc.Color",
+      "r": 211,
+      "g": 211,
+      "b": 211,
+      "a": 255
+    },
+    "_N$hoverColor": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "hoverColor": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_N$disabledColor": {
+      "__type__": "cc.Color",
+      "r": 124,
+      "g": 124,
+      "b": 124,
+      "a": 255
+    },
+    "_N$normalSprite": null,
+    "_N$pressedSprite": null,
+    "pressedSprite": null,
+    "_N$hoverSprite": null,
+    "hoverSprite": null,
+    "_N$disabledSprite": null,
+    "_N$target": null,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 1
+    },
+    "component": "",
+    "_componentId": "e71c5u7yrBAbbPDtGRwVTVP",
+    "handler": "showEnemyInfo",
+    "customEventData": ""
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__uuid__": "63dbbb10-8ef6-4bda-97c3-b21cd4338601"
+    },
+    "fileId": "9cAJcDXGtPFbj/BfkPYyod",
+    "sync": false
+  }
+]

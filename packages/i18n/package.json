@@ -1,0 +1,26 @@
+{
+    "name": "i18n",
+    "version": "0.1.0",
+    "description": "The package template for getting started.",
+    "author": "sthoo.huang",
+    "main": "main.js",
+    "main-menu": {
+
+    },
+    "scene-script": "utils/scene.js",
+    "panel": {
+        "main": "panel/index.js",
+        "type": "dockable",
+        "title": "i18n",
+        "width": 400,
+        "height": 300,
+        "min-width": 300,
+        "min-height": 300
+    },
+    "profiles": {
+        "project": {
+            "languages": [],
+            "default_language": ""
+        }
+    }
+}

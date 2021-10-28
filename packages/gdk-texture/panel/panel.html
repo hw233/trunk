@@ -1,0 +1,79 @@
+<div id="warp" class="warp">
+    <link rel="stylesheet" href="app://node_modules/font-awesome/css/font-awesome.min.css">
+
+    <section class="res">
+        <div class="layout vertical self-stretch flex-1">
+
+            <!-- 选项卡 -->
+            <div class="tab">
+                <ul class="tab-bar layout horizontal group">
+                    <li v-for="(k,v) in tabs" :class="{tab:true,'tab-active':tabIndex==k,'tab-unactive':tabIndex!=k}" @click="refreshTab(k)">{{v}}</li>
+                </ul>
+            </div>
+
+            <!-- 文件夹 -->
+            <ui-box-container class="self-stretch" style="margin-bottom: 10px;">
+                <ui-prop name="Folder">
+                    <ui-input class="flex-1" placeholder="资源目录" v-value="folder" readonly></ui-input>
+                    <ui-button class="green" @click="refreshFolder">Select</ui-button>
+                </ui-prop>
+            </ui-box-container>
+
+            <!-- 额外属性 -->
+            <ui-box-container class="self-stretch">
+                <ui-prop name="Platform">
+                    <setion>
+                        <ui-checkbox style="margin-right: 10px;" v-for="(key,prop) in platformSettings" v-value="platform[key]" @change="refreshResources">{{key}}</option>
+                    </setion>
+                    <ui-button class="green" title="编辑配置，需要设置外部脚本编辑器" @click="editJsonClick">Edit</ui-button>
+                </ui-prop>
+                <ui-prop name="Quality">
+                    <ui-select v-value="quality" @change="refreshResources">
+                        <option value="Default">Default</option>
+                        <option value="Best">Best</option>
+                    </ui-select>
+                </ui-prop>
+                <ui-prop name="Type">
+                    <ui-select v-value="types" @change="refresh">
+                        <option value="texture,auto-atlas">texture,auto-atlas</option>
+                        <option value="texture">texture</option>
+                        <option value="auto-atlas">auto-atlas</option>
+                    </ui-select>
+                </ui-prop>
+                <ui-prop name="Exclude">
+                    <ui-input class="flex-1" placeholder="排除的路径以逗号分隔" v-value="exclude" @change="refreshResources"></ui-input>
+                </ui-prop>
+            </ui-box-container>
+
+        </div>
+    </section>
+
+    <section class="form">
+        <template v-for="(key,obj) in items">
+            <ui-section class="self-stretch">
+                <div class="header">
+                    <ui-checkbox :title="all" v-value="obj.checked" @change="checkedRes(key)"></ui-checkbox>
+                    <span>{{key}}</span>
+                </div>
+                <ul>
+                    <li v-for="item in obj.arr">
+                        <ui-checkbox class="path" :title="item.path" v-value="item.checked" @change="refreshChecked(key)">{{item.url.substr(key.length + 1)}}</ui-checkbox>
+                        <ui-button class="small transparent" @click="jumpRes(item.uuid)">
+                            <i class="fa fa-link"></i>
+                        </ui-button>
+                    </li>
+                </ul>
+            </ui-section>
+        </template>
+    </section>
+
+    <section class="layout horizontal bottom">
+        <ui-button class="medium" @click="selectAll">All</ui-button>
+        <ui-button class="medium {{tabIndex==1?'red':'blue'}}" @click="doit">{{tabs[tabIndex]}}</ui-button>
+    </section>
+
+    <!-- 忙动画 -->
+    <div class="self-stretch" style="transition: .25s ease;" v-show="busy">
+        <ui-loader></ui-loader>
+    </div>
+</div>

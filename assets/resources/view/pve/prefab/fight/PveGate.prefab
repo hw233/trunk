@@ -1,0 +1,536 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "",
+    "_objFlags": 0,
+    "_native": "",
+    "data": {
+      "__id__": 1
+    },
+    "optimizationPolicy": 0,
+    "asyncLoadAssets": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "PveGate",
+    "_objFlags": 0,
+    "_parent": null,
+    "_children": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 5
+      }
+    ],
+    "_active": true,
+    "_level": 1,
+    "_components": [
+      {
+        "__id__": 9
+      },
+      {
+        "__id__": 10
+      },
+      {
+        "__id__": 27
+      }
+    ],
+    "_prefab": {
+      "__id__": 28
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_quat": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "groupIndex": 0,
+    "_id": "",
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "spine",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 2,
+    "_components": [
+      {
+        "__id__": 3
+      }
+    ],
+    "_prefab": {
+      "__id__": 4
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_quat": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "groupIndex": 0,
+    "_id": "",
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "__type__": "sp.Skeleton",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "paused": false,
+    "defaultSkin": "",
+    "defaultAnimation": "",
+    "_preCacheMode": -1,
+    "_cacheMode": 0,
+    "loop": true,
+    "premultipliedAlpha": false,
+    "timeScale": 1,
+    "_accTime": 0,
+    "_playCount": 0,
+    "_frameCache": null,
+    "_curFrame": null,
+    "_skeletonCache": null,
+    "_animationName": null,
+    "_animationQueue": [],
+    "_headAniInfo": null,
+    "_playTimes": 0,
+    "_isAniComplete": true,
+    "_N$skeletonData": null,
+    "_N$_defaultCacheMode": 0,
+    "_N$debugSlots": false,
+    "_N$debugBones": false,
+    "_N$useTint": false,
+    "_N$enableBatch": true,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__uuid__": "cd84631e-9a30-4b84-852e-4d349b62eec2"
+    },
+    "fileId": "818jK3/PJB7Jcqce63RBbi",
+    "sync": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "collider",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 2,
+    "_components": [
+      {
+        "__id__": 6
+      },
+      {
+        "__id__": 7
+      }
+    ],
+    "_prefab": {
+      "__id__": 8
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_quat": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "groupIndex": 5,
+    "_id": "",
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "__type__": "42e74DLs3tKBK1iW5FUsZkp",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 5
+    },
+    "_enabled": true,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.BoxCollider",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 5
+    },
+    "_enabled": true,
+    "tag": 0,
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 100,
+      "height": 30
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__uuid__": "cd84631e-9a30-4b84-852e-4d349b62eec2"
+    },
+    "fileId": "bdhgFhTsRDNYxkGLsaGvXp",
+    "sync": false
+  },
+  {
+    "__type__": "e5c51JE7rJBbJ2aklAg+Xfa",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "spines": [
+      {
+        "__id__": 3
+      }
+    ],
+    "boxCollider": {
+      "__id__": 7
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "82c30TfLL5H/bhHcqHqJiuy",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "fsm": {
+      "__id__": 11
+    },
+    "syncActive": true,
+    "_persist": false,
+    "_id": ""
+  },
+  {
+    "__type__": "Fsm",
+    "fsmName": "FSM-PVE-GATE",
+    "fsmDescription": "Pve传送点状态控制",
+    "states": [
+      {
+        "__id__": 12
+      },
+      {
+        "__id__": 15
+      },
+      {
+        "__id__": 19
+      },
+      {
+        "__id__": 23
+      }
+    ],
+    "events": [],
+    "globalTransitions": [
+      {
+        "__id__": 26
+      }
+    ],
+    "startState": "Loader"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Loader",
+    "stateDescription": "资源加载",
+    "x": -368,
+    "y": -239,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 13
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 14
+      }
+    ]
+  },
+  {
+    "__type__": "PveGatelLoadResAction",
+    "enabled": true,
+    "actionName": "PveGatelLoadResAction",
+    "resource": "spine/gate/{0}/{0}",
+    "animation": 0,
+    "loop": true
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Idle"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Idle",
+    "stateDescription": "待机状态",
+    "x": -61,
+    "y": -224.78125,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 16
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 17
+      },
+      {
+        "__id__": 18
+      }
+    ]
+  },
+  {
+    "__type__": "PveFightIdleAction",
+    "enabled": true,
+    "actionName": "PveFightIdleAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_DIE",
+    "toState": "Destroy"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Check"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Check",
+    "stateDescription": "状态检查",
+    "x": 72,
+    "y": -41.78125,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 20
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 21
+      },
+      {
+        "__id__": 22
+      }
+    ]
+  },
+  {
+    "__type__": "PveGateCheckAction",
+    "enabled": true,
+    "actionName": "PveGateCheckAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_DIE",
+    "toState": "Destroy"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Idle"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Destroy",
+    "stateDescription": "销毁",
+    "x": -247,
+    "y": 8.21875,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 24
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 25
+      }
+    ]
+  },
+  {
+    "__type__": "PveFightDestroyAction",
+    "enabled": true,
+    "actionName": "PveFightDestroyAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": null
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_IDLE",
+    "toState": "Destroy"
+  },
+  {
+    "__type__": "6b7e889/kBHj7Qn9zfEGs93",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "hideMode": 0,
+    "_isShow": null,
+    "isShowWheEnable": false,
+    "_hideMode": null,
+    "_action": null,
+    "startValue": 0,
+    "normalValue": 255,
+    "endValue": 0,
+    "showTime": 0.5,
+    "hideTime": 0.25,
+    "showDelay": 0,
+    "hideDelay": 0,
+    "ease": 3,
+    "hideEase": 3,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__uuid__": "cd84631e-9a30-4b84-852e-4d349b62eec2"
+    },
+    "fileId": "c47ShBHJxOIZX0EMQwPS3W",
+    "sync": false
+  }
+]

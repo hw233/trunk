@@ -1,0 +1,259 @@
+<div class="fit ">
+    <link rel="stylesheet" href="app://node_modules/font-awesome/css/font-awesome.min.css">
+    <ui-splitter class="root fit" row>
+
+        <!-- 工具栏 -->
+        <ui-splitter id="fsmView" class="flex-1">
+            <div id="toolBar" class="layout horizontal center">
+                <ui-select class="selection" :value="currentSceneUuid" @change="selectScene">
+                    <option :value="scene.uuid" v-for="scene in allScenes">{{scene.name}}</option>
+                </ui-select>
+                <ui-select class="selection" :value="currentNodeUuid" @change="selectedNode">
+                    <option :value="node.value.uuid" v-for="node in fsmNodes">{{node.value.name.value}}</option>
+                </ui-select>
+                <ui-select class="selection" :value="currentFsmComUuid" @change="selectedFsm">
+                    <option :value="com.value.uuid.value" v-for="com in fsmComps">{{com.value.fsm.value.fsmName.value}}</option>
+                </ui-select>
+                <ui-button class="small transparent" @click="selectSceneNode" title="在层级管理器选中当前状态机的节点">
+                    <i class="fa fa-link"></i>
+                </ui-button>
+                <ui-button class="small transparent" @click="refreshScene" title="刷新显示">
+                    <i class="icon-arrows-cw"></i>
+                </ui-button>
+                <ui-button class="small transparent" onClick="gdk_fsm.FsmGo.aligningCenterX()" title="水平居中对齐">
+                    <i class="fa fa-align-center"></i>
+                </ui-button>
+                <ui-button class="small transparent" onClick="gdk_fsm.FsmGo.aligningCenterY()" title="垂直居中对齐">
+                    <i class="fa fa-align-center" style="transform: rotate(90deg);"></i>
+                </ui-button>
+                <div class="flex-1"></div>
+                <ui-button :class="{small:true,transparent:true,buttonChecked:locked}" @click="locked=!locked" title="保持选中此状态机">
+                    <i class="icon-lock"></i>
+                </ui-button>
+                <ui-button :class="{small:true,transparent:true,buttonChecked:isShowOverView}" @click="isShowOverView=!isShowOverView" title="显示迷你地图">
+                    <i class="icon-eye"></i>
+                </ui-button>
+            </div>
+
+            <!-- 绘图 -->
+            <ui-box-container id="view" class="flex-2 shadow">
+                <div class="fit">
+                    <div id="drawViewInfo" class="layout vertical fit">
+                        <div class="title">{{allfsmComs&&allfsmComs.length>0?fsmCom.value.fsm.value.fsmName.value:'请先创建一个状态机'}}</div>
+                        <pre>{{allfsmComs&&allfsmComs.length>0?fsmCom.value.fsm.value.fsmDescription.value:'当前场景没有状态机，请在节点添加FsmComponent组件来创建一个状态机'}}</pre>
+                        <div class="flex-1"></div>
+                        <div>v{{version}}</div>
+                    </div>
+                    <div id="drawView"></div>
+                </div>
+            </ui-box-container>
+            <div id="drawOverView" v-show="isShowOverView"></div>
+
+            <!-- 动作列表界面 -->
+            <div id="actionBrowser" v-show="actionBrowserIsShow&&fsmCom&&currentState">
+                <div class="layout vertical center fit">
+                    <div class="title layout horizontal center self-stretch">
+                        <div style="width: 16;" title="双击添加序列尾部或拖动添加到指定位置">
+                            <i class="fa fa-question-circle"></i>
+                        </div>
+                        <span class="flex-1">动作列表</span>
+                        <ui-button class="small transparent" onClick="gdk_fsm.FsmAction.showAddActionPanel()" title="创建新的动作代码">
+                            <i class="icon-plus"></i>
+                        </ui-button>
+                        <ui-button class="red small transparent" @click="actionBrowserIsShow=false">
+                            <i class="icon-cancel"></i>
+                        </ui-button>
+                    </div>
+
+                    <ui-box-container class="self-stretch flex-1">
+                        <ui-section v-for="(key, list) in actionList">
+                            <div class="header">{{key.split('/').join(' / ')}}</div>
+                            <ul>
+                                <li v-for="action in list" class="listItem" :style="{backgroundColor:selectActionName==action?'#1570A6':null}" class="ationListItem" @click="selectActionName=action" @dblclick="addStateAction" v-if="!actionSearchStr||action.info.actionName.toLowerCase().indexOf(actionSearchStr.toLowerCase())!=-1">
+                                    <div class="layout horizontal center-center">
+                                        <div draggable="true" @dragstart="onActionItemDragStart($event,action)" @dragover="onActionItemDragOver" @dragend="onActionItemDropEnd" :title="action.info&&action.info.tooltip">
+                                            {{action.info.actionName}}
+                                        </div>
+                                        <span class="flex-1"></span>
+                                        <ui-button v-el:dropdown class="tiny transparent" title="编辑动作代码，需要设置外部脚本编辑器" @click="openActionSource(action)">
+                                            <i class="fa fa-pencil"></i>
+                                        </ui-button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ui-section>
+                    </ui-box-container>
+                    <ui-box-container class="self-stretch">
+                        <div class="layout vertical self-stretch" style="margin:5px;">
+                            <ui-input placeholder="搜索" style="margin:2px;" v-value="actionSearchStr"></ui-input>
+                            <ui-button onClick="gdk_fsm.FsmAction.addStateAction()" class="blue" style="margin:1px;" v-bind:disabled="!selectActionName">添加到状态</ui-button>
+                        </div>
+                    </ui-box-container>
+                </div>
+            </div>
+        </ui-splitter>
+
+        <!-- 右侧边栏 -->
+        <ui-splitter class="layout vertical" width="280" min-width="280">
+            <div id="prop" class="fit layout vertical">
+                <ul id="propTab" class="tabBar layout horizontal group">
+                    <li :class="{tiny:true,'flex-1':true, tab:true,tabActive:propTabIndex==0,tabUnActive:propTabIndex!=0}" @click="propTabIndex=0">状态机</li>
+                    <li :class="{tiny:true,'flex-1':true, tab:true,tabActive:propTabIndex==1,tabUnActive:propTabIndex!=1}" @click="propTabIndex=1">状态</li>
+                    <li :class="{tiny:true,'flex-1':true, tab:true,tabActive:propTabIndex==2,tabUnActive:propTabIndex!=2}" @click="propTabIndex=2">事件</li>
+                </ul>
+
+                <div id="propContent" class="layout vertical flex-1">
+                    <div id="fsmProp" v-show="propTabIndex==0" v-if="fsmCom" class="flex-1 propView layout vertical">
+                        <ui-input placeholder="名称" class="propItem" v-value="fsmCom.value.fsm.value.fsmName.value" @change="m_fsm('fsmName')">
+                        </ui-input>
+                        <ui-text-area placeholder="描述" resize-v class="propItem" v-value="fsmCom.value.fsm.value.fsmDescription.value" @change="m_fsm('fsmDescription')">
+                        </ui-text-area>
+                        <!--
+                        <ui-box-container class="shadow flex-1" style="background-color:rgb(68, 68, 68)">
+                            <ul>
+                                <li :key="state.stateName" v-for="state in fsmCom.value.fsm.value.states.value">{{state.stateName}}</li>
+                            </ul>
+                        </ui-box-container>
+                        <ui-button @click="a_state" class="propItem">添加状态</ui-button>
+                        -->
+                    </div>
+                    <div id="stateProp" v-show="propTabIndex==1" v-if="currentState&&fsmCom" class="flex-1 propView layout vertical">
+                        <ui-input placeholder="状态名" class="propItem" :value="currentState.stateName.value" @confirm="m_state($event,'stateName')"></ui-input>
+                        <ui-input placeholder="描述" class="propItem" v-value="currentState.stateDescription.value" @change="m_state($event,'stateDescription')">
+                        </ui-input>
+                        <span>
+                            <label>执行模式：</label>
+                            <ui-select :value="currentState.sequence.value?1:0" @change="m_state($event,'sequence')">
+                                <option value="1">序列</option>
+                                <option value="0">同时</option>
+                            </ui-select>
+                        </span>
+
+                        <ui-box-container id="actionView" class="layout vertical flex-1 scroll " @drop="onActionItemDrop" @dragover="onAllowDrop">
+                            <div class="section">
+                                <state-action v-for="action in currentState.actions.value" :action="action" :actionId="action.value.uuid.value" :state="currentState" :info="getActionInfo(action)" :fsmcom="fsmCom" @refresh-scene="refreshScene" @show-action-menu="showActionMenu" @drop="onActionItemDrop" @dragover="onAllowDrop" draggable="true" @dragstart="onActionDragStart" @dragend="onActionItemDropEnd">
+                                </state-action>
+                            </div>
+                            <ui-button onClick="gdk_fsm.FsmAction.popupActionMenu(this)" style="margin:30 30 5 30;">添加动作</ui-button>
+                            <ui-button onClick="gdk_fsm.FsmAction.showAddActionPanel(this)" style="margin:5 30 5 30;">创建动作</ui-button>
+                        </ui-box-container>
+                        <ui-button @click="showActionBrowser(!actionBrowserIsShow)" class="blue" style="margin:5px">动作面板</ui-button>
+                    </div>
+
+                    <div id="eventProp" v-show="propTabIndex==2" class="flex-1 propView layout vertical">
+                        <!--
+                        <ui-box-container class="shadow flex-1">
+                            <ul>
+                                <li v-for="e in sysEvents" @click="inputEventName=e">e</li>
+                                <li v-for="e in customEvents" @click="inputEventName=e">e</li>
+                            </ul>
+                        </ui-box-container>
+                        <ui-input v-value="inputEventName"></ui-input>
+                        <ui-button @click="a_state" class="propItem" @click="a-Event">添加事件</ui-button>
+                        <ui-button @click="a_state" class="propItem" @click="a-GlobalEvent">添加到全局事件</ui-button>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </ui-splitter>
+    </ui-splitter>
+
+    <!-- 右键弹出菜单 -->
+    <div id="menu" class="popMenu">
+        <ul v-show="menuSelection=='none'">
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'addState')">添加状态</li>
+        </ul>
+
+        <ul v-show="menuSelection=='state'">
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'setStart')" v-show="menuSelectionItem.showStart">设为起始状态</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'addEvent','FINISH')" v-show="menuSelectionItem.showFinish">添加完成事件</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'addEvent')">添加自定义事件</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'addGlobalEvent')">添加全局事件</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'deleteState')">删除状态</li>
+        </ul>
+
+        <ul v-show="menuSelection=='event'">
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'addEvent','FINISH')" v-show="menuSelectionItem.showFinish">添加完成事件</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'upEvent')">上移</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'downEvent')">下移</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'addEvent')">添加自定义事件</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'renameEvent')">重命名</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'deleteEvent')">删除事件</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'deleteTransition')">删除过渡</li>
+        </ul>
+
+        <ul v-show="menuSelection=='globalEvent'">
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'addGlobalEvent')">添加全局事件</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'renameGlobalEvent')">重命名</li>
+            <li onClick="gdk_fsm.FsmClick.menuClick(event,'deleteGlobalEvent')">删除全局事件</li>
+        </ul>
+    </div>
+
+    <!-- 事件输入界面 -->
+    <div id="customEventMask" class="fit mask"></div>
+    <div id="customEventPanel" class="layout vertical">
+        <div class="title layout horizontal self-stretch center">
+            <span class="flex-1">{{menuIsRenameEvent?'修改':'添加'}}{{isInputEventGlobal?'全局':'自定义'}}事件</span>
+            <ui-button class="red small transparent" onClick="gdk_fsm.FsmEvent.hideEventInputPanel()">
+                <i class="icon-cancel"></i>
+            </ui-button>
+        </div>
+        <ui-box-container>
+            <div class="layout horizontal self-stretch center" style="width:auto;padding:5px;">
+                <div style="width:auto;padding:5px;">
+                    <label>事件名：</label>
+                    <!-- <ui-input id="customEventPanelInput" v-value="inputEventString" @keyup.enter="a_event"></ui-input> -->
+                    <!-- 自定义事件 -->
+                    <!-- <ui-select v-value="inputEventString" title="如果没可选值，请先配置gdk_fsm.FsmEventId">
+                                <option :value="key" v-for="(key,value) in fsmEventList">{{key}}</option> -->
+                    <!-- </ui-select> -->
+                    <ui-input id="customEventPanelInput" placeholder="事件名称" v-value="inputEventString" @keyup.enter="a_event" @change="onCustomEventChange"></ui-input>
+                    <!-- <datalist id="customEventPanelInputDataList">
+                        <option v-for="(k, v) in fsmEventList" :value="v"></option>
+                    </datalist> -->
+                </div>
+                <ui-button v-bind:disabled="!inputEventString" @click="a_event">{{menuIsRenameEvent?'修改':'添加'}}</ui-button>
+            </div>
+        </ui-box-container>
+    </div>
+    <div id="customEventPanelSelect" class="popMenu">
+        <ul>
+            <li v-for="(k, v) in eventAutoCompleteMatchs" @click="clickEventListItem(v)">{{v}}</li>
+        </ul>
+    </div>
+
+    <!-- 动作快捷菜单 -->
+    <div id="actionMenuMask" class="fit mask" @click="hideActionMenu"></div>
+    <div id="actionMenu" class="popMenu">
+        <ul>
+            <li @click="actionUp">向上移</li>
+            <li @click="actionDown">向下移</li>
+            <li @click="actionDelete">删除</li>
+        </ul>
+    </div>
+
+    <div id="addActionPanelMask" class="fit mask"></div>
+    <div id="addActionPanel" class="layout vertical">
+        <div class="title layout horizontal self-stretch center">
+            <span class="flex-1">创建动作代码</span>
+            <ui-button class="red small transparent" onClick="gdk_fsm.FsmAction.hideAddActionPanel()">
+                <i class="icon-cancel"></i>
+            </ui-button>
+        </div>
+        <ui-box-container class="layout vertical self-stretch">
+            <template v-for="(key, prop) in addActionInfo">
+                <div class="layout horizontal" style="margin:4px;" v-if="prop.type=='string'">
+                    <label>{{prop.name||key}}：</label>
+                    <ui-input :id="'addActionPanel_'+key" :placeholder="prop.placeholder" v-value="prop.value" style="width:240px;">
+                    </ui-input>
+                </div>
+                <div class="layout horizontal" style="margin:4px;" v-else>
+                    <label>{{prop.name||key}}：</label>
+                    <ui-text-area :id="'addActionPanel_'+key" :placeholder="prop.placeholder" v-value="prop.value" style="width:240px;">
+                    </ui-text-area>
+                </div>
+            </template>
+            <ui-button class="blue" v-bind:disabled="!addActionInfo.name.value||!addActionInfo.type.value" @click="createActionSource" style="margin:10px 2px 0px 2px;">创建</ui-button>
+        </ui-box-container>
+    </div>
+</div>

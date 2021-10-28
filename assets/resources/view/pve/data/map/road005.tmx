@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="10" nextobjectid="255">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="7" name="图像图层 1" locked="1">
+  <image source="C:/Users/2010104-0009/Desktop/策划文档/地图测试/720/路线+地图结构/01_副本.jpg" width="720" height="1280"/>
+ </imagelayer>
+ <objectgroup id="1" name="roads">
+  <object id="246" name="1" x="-143.833" y="202.833">
+   <polyline points="398.954,-116.75 403.46,319.011 573.31,330.621 574.778,702.333 477.17,726.565 476.996,930.498"/>
+  </object>
+  <object id="254" name="2" x="-143.833" y="202.833">
+   <polyline points="438.954,-116.75 438.793,289.011 615.31,295.954 612.778,734.333 529.17,744.565 476.996,930.498"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="towers">
+  <object id="28" name="lhero3" gid="172" x="561.332" y="810.167" width="10" height="10"/>
+  <object id="221" name="rhero2" gid="172" x="329.75" y="661.333" width="10" height="10"/>
+  <object id="243" name="lhero1" gid="172" x="380.25" y="430.614" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="protege">
+  <object id="247" name="1" gid="218" x="329.243" y="1139.69" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="2" name="spawns">
+  <object id="251" name="2" gid="174" x="290" y="90.3333" width="10" height="10"/>
+  <object id="2" name="1" gid="174" x="250.5" y="89.833" width="10" height="10"/>
+ </objectgroup>
+</map>

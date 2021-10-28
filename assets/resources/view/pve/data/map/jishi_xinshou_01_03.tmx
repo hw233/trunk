@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="16" nextobjectid="374">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="7" name="图像图层 1" locked="1" offsetx="-20" offsety="-159">
+  <image source="../../../../map/jishi.jpg" width="760" height="1598"/>
+ </imagelayer>
+ <objectgroup id="11" name="general">
+  <object id="269" name="lgeneral1" type="General" gid="170" x="714.417" y="1180.08" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="13" name="gates">
+  <object id="278" name="1_1001_to_0_2" gid="174" x="-10.167" y="-119.417" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="1" name="roads">
+  <object id="323" name="1" x="188" y="193">
+   <polyline points="-150.677,-93.7897 74.0224,342.886 482.32,985.623"/>
+  </object>
+  <object id="346" name="2" x="53.3333" y="204">
+   <polyline points="-16.0107,975.545 43.72,978.77 204.932,973.551 304.593,976.141 340.681,976.502 408.538,974.59 620.987,973.623"/>
+  </object>
+  <object id="373" name="3" x="27" y="1171">
+   <polyline points="0,0 238,0 240,-547 416,-547 426,-4 655,1"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="towers">
+  <object id="359" name="lhero4" type="Hero" gid="172" x="192" y="178.667" width="10" height="10"/>
+  <object id="349" name="lhero2" type="Hero" gid="172" x="162.666" y="1071" width="10" height="10"/>
+  <object id="350" name="lhero3" type="Hero" gid="172" x="532.333" y="1084.67" width="10" height="10"/>
+  <object id="328" name="lhero1" type="Hero" gid="172" x="355.333" y="725.333" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="720" y="1181.66" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="2" name="spawns">
+  <object id="322" name="1_1" type="Spawn" gid="174" x="25" y="96.3337" width="10" height="10"/>
+  <object id="343" name="2_1" type="Spawn" gid="174" x="20.9997" y="1178.17" width="10" height="10"/>
+  <object id="361" name="3_1" type="Spawn" gid="174" x="29" y="1186" width="10" height="10"/>
+ </objectgroup>
+</map>

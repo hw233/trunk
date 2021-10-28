@@ -1,0 +1,166 @@
+{
+    "default": null,
+    "android": null,
+    "minigame": {
+        "Default": {
+            "JPG": {
+                "formats": [{
+                        "name": "pvrtc_4bits_rgb",
+                        "quality": "normal"
+                    },
+                    {
+                        "name": "etc1_rgb",
+                        "quality": "fast"
+                    },
+                    {
+                        "name": "jpg",
+                        "quality": 80
+                    }
+                ]
+            },
+            "PNG": {
+                "formats": [{
+                        "name": "pvrtc_4bits_rgb_a",
+                        "quality": "normal"
+                    },
+                    {
+                        "name": "etc1",
+                        "quality": "fast"
+                    },
+                    {
+                        "name": "png",
+                        "quality": 80
+                    }
+                ]
+            }
+        },
+        "Best": {
+            "JPG": {
+                "formats": [{
+                        "name": "pvrtc_4bits_rgb",
+                        "quality": "normal"
+                    },
+                    {
+                        "name": "etc1_rgb",
+                        "quality": "slow"
+                    },
+                    {
+                        "name": "jpg",
+                        "quality": 80
+                    }
+                ]
+            },
+            "PNG": {
+                "formats": [{
+                        "name": "pvrtc_4bits_rgb_a",
+                        "quality": "normal"
+                    },
+                    {
+                        "name": "etc1",
+                        "quality": "slow"
+                    },
+                    {
+                        "name": "png",
+                        "quality": 80
+                    }
+                ]
+            }
+        }
+    },
+    "web": {
+        "Default": {
+            "JPG": {
+                "formats": [{
+                        "name": "pvrtc_4bits_rgb",
+                        "quality": "normal"
+                    },
+                    {
+                        "name": "etc1_rgb",
+                        "quality": "fast"
+                    },
+                    {
+                        "name": "jpg",
+                        "quality": 80
+                    }
+                ]
+            },
+            "PNG": {
+                "formats": [{
+                        "name": "pvrtc_4bits_rgb_a",
+                        "quality": "normal"
+                    },
+                    {
+                        "name": "etc1",
+                        "quality": "fast"
+                    },
+                    {
+                        "name": "png",
+                        "quality": 80
+                    }
+                ]
+            }
+        },
+        "Best": {
+            "JPG": {
+                "formats": [{
+                        "name": "pvrtc_4bits_rgb",
+                        "quality": "normal"
+                    },
+                    {
+                        "name": "etc1_rgb",
+                        "quality": "slow"
+                    },
+                    {
+                        "name": "jpg",
+                        "quality": 80
+                    }
+                ]
+            },
+            "PNG": {
+                "formats": [{
+                        "name": "pvrtc_4bits_rgb_a",
+                        "quality": "normal"
+                    },
+                    {
+                        "name": "etc1",
+                        "quality": "slow"
+                    },
+                    {
+                        "name": "png",
+                        "quality": 80
+                    }
+                ]
+            }
+        }
+    },
+    "ios": {
+        "Default": {
+            "JPG": {
+                "formats": [{
+                    "name": "etc2_rgb",
+                    "quality": "fast"
+                }]
+            },
+            "PNG": {
+                "formats": [{
+                    "name": "etc2",
+                    "quality": "fast"
+                }]
+            }
+        },
+        "Best": {
+            "JPG": {
+                "formats": [{
+                    "name": "etc2_rgb",
+                    "quality": "slow"
+                }]
+            },
+            "PNG": {
+                "formats": [{
+                    "name": "etc2",
+                    "quality": "slow"
+                }]
+            }
+        }
+    }
+}

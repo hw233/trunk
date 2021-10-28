@@ -1,0 +1,62 @@
+{
+  "ver": "1.2.1",
+  "uuid": "3e6bead2-5333-4d11-88f8-ed66b910af00",
+  "maxWidth": 256,
+  "maxHeight": 256,
+  "padding": 2,
+  "allowRotation": true,
+  "forceSquared": false,
+  "powerOfTwo": false,
+  "algorithm": "MaxRects",
+  "format": "png",
+  "quality": 80,
+  "contourBleed": true,
+  "paddingBleed": true,
+  "filterUnused": false,
+  "packable": false,
+  "premultiplyAlpha": false,
+  "filterMode": "bilinear",
+  "platformSettings": {
+    "minigame": {
+      "formats": [
+        {
+          "name": "pvrtc_4bits_rgb_a",
+          "quality": "best"
+        },
+        {
+          "name": "etc1",
+          "quality": "slow"
+        },
+        {
+          "name": "png",
+          "quality": 80
+        }
+      ]
+    },
+    "web": {
+      "formats": [
+        {
+          "name": "pvrtc_4bits_rgb_a",
+          "quality": "best"
+        },
+        {
+          "name": "etc1",
+          "quality": "slow"
+        },
+        {
+          "name": "png",
+          "quality": 80
+        }
+      ]
+    },
+    "ios": {
+      "formats": [
+        {
+          "name": "etc2",
+          "quality": "slow"
+        }
+      ]
+    }
+  },
+  "subMetas": {}
+}

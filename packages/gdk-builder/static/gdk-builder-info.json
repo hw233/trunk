@@ -1,0 +1,174 @@
+{
+    "general": {
+        "version": {
+            "name": "起始版本号",
+            "value": "1.0.0.000",
+            "type": "version"
+        },
+        "buildtype": {
+            "name": "版本类型",
+            "value": "a",
+            "type": "select",
+            "option": [
+                ["alpha", "a"],
+                ["beta", "b"],
+                ["release", "r"]
+            ]
+        },
+        "env": {
+            "name": "连接环境",
+            "value": 2,
+            "type": "select",
+            "option": [
+                ["内网", 1],
+                ["外网", 2]
+            ]
+        },
+        "logLevel": {
+            "name": "打印日志",
+            "value": 1,
+            "type": "select",
+            "option": [
+                ["log", 1],
+                ["error", 2]
+            ]
+        },
+        "debugPanel": {
+            "name": "调试面板",
+            "value": true,
+            "type": "boolean"
+        },
+        "compressImage": {
+            "name": "压缩图片",
+            "value": true,
+            "type": "boolean"
+        },
+        "ignoreAutoAtlas": {
+            "name": "不压缩自动图集纹理",
+            "value": true,
+            "type": "boolean"
+        },
+        "ignoreImageSize": {
+            "name": "不压缩的图片大小(K)",
+            "value": 100,
+            "type": "int"
+        },
+        "ignoreImages": {
+            "name": "不压缩的图片文件或文件夹",
+            "value": [],
+            "type": "array"
+        },
+        "tinyPngTokens": {
+            "name": "图片压缩选项(TinyPng Tokens - https://tinypng.com/)",
+            "value": [
+                "KspTl8tHp8F7gDgMZrxXvk5NVY91dg0p",
+                "wVNd0T9NGQc4sDdq76dcnn274gJdNb30",
+                "vQPgwMksW8G75816d5Ds4z93C25cKdQn",
+                "Dd9ddzP5bXHJ07TpsRrGmQwYvSFtnnG4",
+                "0JjV0VNBghXQ15mXxZBXdsVwxlMX9dWc",
+                "0gd2rQwrmRFHnCLlJRvbFjJ0TGzGrpd7"
+            ],
+            "type": "array"
+        },
+        "tmxReplaces": {
+            "name": "删除TMX资源图片节点",
+            "value": [
+                "resources/view/pve",
+                "resources/view/map/texture/worldmap"
+            ],
+            "type": "array"
+        }
+    },
+    "web-mobile": {
+        "compressJson": {
+            "name": "压缩json文件",
+            "value": false,
+            "type": "boolean"
+        },
+        "encryptJson": {
+            "name": "加密json文件",
+            "value": true,
+            "type": "boolean"
+        },
+        "encryptJsonKey": {
+            "name": "加密json密钥",
+            "value": "9XaAmVXToj1TCYfcjrAWHze7ny0oP5ZQ",
+            "length": 32,
+            "type": "password"
+        },
+        "mergeJson": {
+            "name": "合并json的大小限制(K)",
+            "value": 3,
+            "type": "int"
+        },
+        "delMergedJson": {
+            "name": "删除合并json源文件",
+            "value": true,
+            "type": "boolean"
+        },
+        "cacheJson": {
+            "name": "使用json缓存",
+            "value": true,
+            "type": "boolean"
+        },
+        "sdk-key": {
+            "name": "Sdk验证key",
+            "value": "9XaAmVXToj1TCYfcjrAWHze7ny0oP5ZQ",
+            "length": 32,
+            "type": "password"
+        },
+        "jszipfiles": {
+            "name": "需要压缩的js文件",
+            "value": [
+                "src/**/*.js",
+                "main*.js",
+                "cocos2d-js-min*.js"
+            ],
+            "type": "array"
+        },
+        "obfuscatorfiles": {
+            "name": "需要混淆的js文件",
+            "value": [
+                "boot*.js"
+            ],
+            "type": "array"
+        }
+    },
+
+    "jsb-link": {
+        "mergeJson": {
+            "name": "合并json的大小限制(K)",
+            "value": 3,
+            "type": "int"
+        },
+        "delMergedJson": {
+            "name": "删除合并json源文件",
+            "value": true,
+            "type": "boolean"
+        },
+        "serverRootDir": {
+            "name": "热更服务器URL",
+            "placeholder": "http://",
+            "value": "",
+            "type": "string"
+        },
+        "localProjectManifestUrl": {
+            "name": "本地project.manifest",
+            "value": "",
+            "type": "file",
+            "filters": [{
+                "name": "*.manifest",
+                "extensions": ["manifest"]
+            }]
+        },
+        "localVersionManifestUrl": {
+            "name": "本地version.manifest",
+            "value": "",
+            "type": "file",
+            "filters": [{
+                "name": "*.manifest",
+                "extensions": ["manifest"]
+            }]
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="9" nextobjectid="24">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="0" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="1" name="图像图层 1" offsetx="-20" offsety="-159">
+  <image source="F:/qiushengzhicheng/client/assets/resources/map/caodi_1.jpg" width="760" height="1598"/>
+ </imagelayer>
+ <objectgroup id="2" name="general">
+  <object id="1" name="lgeneral1" type="General" gid="170" x="542.212" y="954.174" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="3" name="hang">
+  <object id="2" name="hang" type="General" gid="170" x="1075.08" y="550.75" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="gate">
+  <object id="3" name="gate1" gid="174" x="1086.11" y="470.31" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="5" name="roads">
+  <object id="5" name="1" x="458.772" y="955.859" rotation="0.061999">
+   <polyline points="86.1086,-8.49256 -413.153,-505.077 -277.043,-640.243 -49.9175,-416.139 81.5212,-562.898 81.718,-740.825"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="towers">
+  <object id="10" name="rhero1" type="Hero" gid="172" x="265.083" y="545.947" width="10" height="10"/>
+  <object id="15" name="rhero2" type="Hero" gid="172" x="453.667" y="359.666" width="10" height="10"/>
+  <object id="20" name="rhero6" type="Hero" x="173" y="433" width="10" height="10"/>
+  <object id="21" name="rhero5" type="Hero" x="435" y="689" width="10" height="10"/>
+  <object id="22" name="rhero4" type="Hero" x="314" y="837" width="10" height="10"/>
+  <object id="23" name="rhero3" type="Hero" x="396" y="401" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="7" name="protege">
+  <object id="11" name="1" type="Spawn" gid="218" x="541.697" y="953.55" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="8" name="spawns">
+  <object id="13" name="1_1" type="Spawn" gid="174" x="537.25" y="210.247" width="10" height="10"/>
+ </objectgroup>
+</map>

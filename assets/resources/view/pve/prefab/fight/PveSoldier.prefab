@@ -1,0 +1,418 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "",
+    "_objFlags": 0,
+    "_native": "",
+    "data": {
+      "__id__": 1
+    },
+    "optimizationPolicy": 0,
+    "asyncLoadAssets": false,
+    "readonly": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "PveSoldier",
+    "_objFlags": 0,
+    "_parent": null,
+    "_children": [
+      {
+        "__id__": 2
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 5
+      },
+      {
+        "__id__": 6
+      },
+      {
+        "__id__": 22
+      }
+    ],
+    "_prefab": {
+      "__id__": 23
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "spine",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 3
+      }
+    ],
+    "_prefab": {
+      "__id__": 4
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "sp.Skeleton",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "7afd064b-113f-480e-b793-8817d19f63c3"
+      }
+    ],
+    "paused": false,
+    "defaultSkin": "",
+    "defaultAnimation": "",
+    "_preCacheMode": -1,
+    "_cacheMode": 0,
+    "loop": true,
+    "premultipliedAlpha": false,
+    "timeScale": 1,
+    "_accTime": 0,
+    "_playCount": 0,
+    "_frameCache": null,
+    "_curFrame": null,
+    "_skeletonCache": null,
+    "_animationName": null,
+    "_animationQueue": [],
+    "_headAniInfo": null,
+    "_playTimes": 0,
+    "_isAniComplete": true,
+    "_N$skeletonData": null,
+    "_N$_defaultCacheMode": 0,
+    "_N$debugSlots": false,
+    "_N$debugBones": false,
+    "_N$debugMesh": false,
+    "_N$useTint": false,
+    "_N$enableBatch": true,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__uuid__": "30d4550f-9b59-4bb2-9a7c-4a4454235022"
+    },
+    "fileId": "818jK3/PJB7Jcqce63RBbi",
+    "sync": false
+  },
+  {
+    "__type__": "c98f9H0CFlJP67XM0UWJ/ON",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "spines": [
+      {
+        "__id__": 3
+      }
+    ],
+    "_id": ""
+  },
+  {
+    "__type__": "82c30TfLL5H/bhHcqHqJiuy",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "fsm": {
+      "__id__": 7
+    },
+    "syncActive": true,
+    "_persist": false,
+    "_id": ""
+  },
+  {
+    "__type__": "Fsm",
+    "fsmName": "FSM-PVE-SOLDIER",
+    "fsmDescription": "PVE小兵状态控制",
+    "states": [
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 12
+      },
+      {
+        "__id__": 15
+      },
+      {
+        "__id__": 18
+      }
+    ],
+    "events": [],
+    "globalTransitions": [
+      {
+        "__id__": 21
+      }
+    ],
+    "startState": "Loader"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Loader",
+    "stateDescription": "资源加载",
+    "x": -273,
+    "y": -174,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 9
+      },
+      {
+        "__id__": 10
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 11
+      }
+    ]
+  },
+  {
+    "__type__": "PveSoldierLoadResAction",
+    "enabled": true,
+    "actionName": "PveSoldierLoadResAction",
+    "animation": 0,
+    "loop": true
+  },
+  {
+    "__type__": "PveFightInitAction",
+    "enabled": true,
+    "actionName": "PveFightInitAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Idle"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Idle",
+    "stateDescription": "待机状态",
+    "x": -53,
+    "y": -50,
+    "sequence": true,
+    "actions": [],
+    "transitions": [
+      {
+        "__id__": 13
+      },
+      {
+        "__id__": 14
+      }
+    ]
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_DIE",
+    "toState": "Die"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": ""
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Die",
+    "stateDescription": "死亡",
+    "x": 163,
+    "y": -176,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 16
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 17
+      }
+    ]
+  },
+  {
+    "__type__": "PveSoldierDieAction",
+    "enabled": true,
+    "actionName": "PveSoldierDieAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Relive"
+  },
+  {
+    "__type__": "FsmState",
+    "stateName": "Relive",
+    "stateDescription": "复活",
+    "x": -53,
+    "y": -241,
+    "sequence": true,
+    "actions": [
+      {
+        "__id__": 19
+      }
+    ],
+    "transitions": [
+      {
+        "__id__": 20
+      }
+    ]
+  },
+  {
+    "__type__": "PveSoldierReliveAction",
+    "enabled": true,
+    "actionName": "PveSoldierReliveAction"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "FINISH",
+    "toState": "Loader"
+  },
+  {
+    "__type__": "FsmTransition",
+    "eventName": "PVE_FIGHT_DIE",
+    "toState": "Die"
+  },
+  {
+    "__type__": "6b7e889/kBHj7Qn9zfEGs93",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "hideMode": 0,
+    "_isShow": null,
+    "isShowWheEnable": false,
+    "_hideMode": null,
+    "_action": null,
+    "startValue": 0,
+    "normalValue": 255,
+    "endValue": 0,
+    "showTime": 0.5,
+    "hideTime": 0.25,
+    "showDelay": 0,
+    "hideDelay": 0,
+    "ease": 3,
+    "hideEase": 3,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__uuid__": "30d4550f-9b59-4bb2-9a7c-4a4454235022"
+    },
+    "fileId": "c47ShBHJxOIZX0EMQwPS3W",
+    "sync": false
+  }
+]

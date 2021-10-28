@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" nextobjectid="396">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer name="图像图层 1" offsetx="0" offsety="-10">
+  <image source="../../../../map/royal2.png" width="720" height="1325"/>
+ </imagelayer>
+ <objectgroup name="general">
+  <object id="269" name="rgeneral1" type="General" gid="170" x="9.083" y="894.073" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup name="gates">
+  <object id="278" name="1_1001_to_0_2" gid="174" x="-88.8337" y="-108.75" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup name="roads">
+  <object id="366" name="1" x="201.333" y="-190.667">
+   <polyline points="487.99,1142.88 443.023,1142.76 428.556,1121.94 430.748,1037.67 404.939,1020.06 273.285,1020.11 249.633,1040.82 252.993,1152.91 229.713,1173.09 83.7263,1170.8 69.7396,1186.51 67.0998,1301.27 47.7932,1316.69 -94.2001,1316.05 -112.86,1300.07 -111.357,1107.75 -128.52,1082.76 -176.18,1080.11"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="towers">
+  <object id="391" name="rhero2" type="Hero" gid="172" x="354.834" y="890" width="10" height="10"/>
+  <object id="393" name="rhero1" type="Hero" gid="172" x="536.398" y="919.477" width="10" height="10"/>
+  <object id="395" name="rhero3" type="Hero" gid="172" x="175" y="1039" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="12.3327" y="894.319" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup name="spawns">
+  <object id="363" name="1_1" type="Spawn" gid="174" x="697" y="956.497" width="10" height="10"/>
+ </objectgroup>
+</map>

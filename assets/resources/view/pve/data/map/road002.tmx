@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="6" nextobjectid="243">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <objectgroup id="1" name="roads">
+  <object id="231" name="1" x="14" y="334">
+   <polyline points="179.5,-308.667 177.666,-76.3333 179.334,170 187.667,338.667 196,403 215.427,513.353 286.667,607 330.818,686.781 353.931,737.012 369,914"/>
+  </object>
+  <object id="232" name="2" x="712.77" y="154.819" rotation="0.79911">
+   <polyline points="-289.547,-130.794 -293.116,-50.2828 -158.022,-49.3692 -157.464,17.7414 -435.237,21.6676 -432.426,123.283 -160.127,118.379 -155.111,375.861 -422.079,381.816 -416.83,618.616 -143.375,617.025 -143.141,720.978 -401.795,720.63 -405.028,813.929 -279.53,811.178 -276.557,1101.2"/>
+  </object>
+  <object id="233" name="3" x="87.6667" y="1231.97">
+   <polyline points="217.333,-1206.17 202.96,-995.805 210.133,-824.805 198.147,-634.755 223.47,-415.043 288.559,-303.016 312,15.0291"/>
+  </object>
+  <object id="234" name="4" x="685" y="333">
+   <polyline points="-159.833,-307.167 -169.038,-166.795 -172.333,-9.33333 -177.333,271.667 -204.063,446.509 -249,913.667"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="towers">
+  <object id="28" name="5" gid="172" x="278.999" y="901.667" width="10" height="10"/>
+  <object id="221" name="6" gid="172" x="491.333" y="901.333" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="protege">
+  <object id="49" name="1" gid="218" x="400.666" y="1260" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="2" name="spawns">
+  <object id="2" name="1" gid="174" x="190.501" y="19.9997" width="10" height="10"/>
+  <object id="208" name="2" gid="174" x="420.167" y="19.8337" width="10" height="10"/>
+  <object id="223" name="4" gid="174" x="520.333" y="20.0003" width="10" height="10"/>
+  <object id="240" name="3" gid="174" x="300.167" y="20.5" width="10" height="10"/>
+ </objectgroup>
+</map>

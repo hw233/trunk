@@ -1,0 +1,96 @@
+{
+"skeleton": { "hash": "aDBXjjl7ZfSXZOQWBbatmcOJrEA", "spine": "3.7.92", "width": 0, "height": 0, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "images/buff/zhuzi0001", "parent": "root", "length": 160.15, "rotation": 92.51, "x": 187, "y": 35.5 },
+	{ "name": "images/buff/heiyuanq", "parent": "root", "length": 221.06, "rotation": 91.35, "x": 492.18, "y": 9.96 }
+],
+"slots": [
+	{ "name": "images/buff/heiyuanq", "bone": "images/buff/heiyuanq" },
+	{ "name": "images/buff/zhuzi0001", "bone": "images/buff/zhuzi0001", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"images/buff/heiyuanq": {
+			"images/buff/heiyuanq": { "x": 5.14, "y": -2.72, "rotation": -91.35, "width": 178, "height": 115 }
+		},
+		"images/buff/zhuzi0001": {
+			"images/buff/zhuzi0001": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0002": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0003": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0004": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0005": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0006": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0007": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0008": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0009": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0010": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0011": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0012": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0013": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0014": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0015": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0016": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0017": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0018": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0019": { "y": 0.5, "width": 304, "height": 261 },
+			"images/buff/zhuzi0020": { "y": 0.5, "width": 304, "height": 261 }
+		}
+	}
+},
+"animations": {
+	"hit": {
+		"slots": {
+			"images/buff/heiyuanq": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.3, "color": "ffffff91" },
+					{ "time": 0.6333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "images/buff/heiyuanq" }
+				]
+			},
+			"images/buff/zhuzi0001": {
+				"attachment": [
+					{ "time": 0, "name": "images/buff/zhuzi0001" },
+					{ "time": 0.0333, "name": "images/buff/zhuzi0002" },
+					{ "time": 0.0667, "name": "images/buff/zhuzi0003" },
+					{ "time": 0.1, "name": "images/buff/zhuzi0004" },
+					{ "time": 0.1333, "name": "images/buff/zhuzi0005" },
+					{ "time": 0.1667, "name": "images/buff/zhuzi0006" },
+					{ "time": 0.2, "name": "images/buff/zhuzi0007" },
+					{ "time": 0.2333, "name": "images/buff/zhuzi0008" },
+					{ "time": 0.2667, "name": "images/buff/zhuzi0009" },
+					{ "time": 0.3, "name": "images/buff/zhuzi0010" },
+					{ "time": 0.3333, "name": "images/buff/zhuzi0011" },
+					{ "time": 0.3667, "name": "images/buff/zhuzi0012" },
+					{ "time": 0.4, "name": "images/buff/zhuzi0013" },
+					{ "time": 0.4333, "name": "images/buff/zhuzi0014" },
+					{ "time": 0.4667, "name": "images/buff/zhuzi0015" },
+					{ "time": 0.5, "name": "images/buff/zhuzi0016" },
+					{ "time": 0.5333, "name": "images/buff/zhuzi0017" },
+					{ "time": 0.5667, "name": "images/buff/zhuzi0018" },
+					{ "time": 0.6, "name": "images/buff/zhuzi0019" },
+					{ "time": 0.6333, "name": "images/buff/zhuzi0020" }
+				]
+			}
+		},
+		"bones": {
+			"images/buff/zhuzi0001": {
+				"rotate": [
+					{ "time": 0, "angle": -92.51 }
+				],
+				"translate": [
+					{ "time": 0, "x": -184, "y": 5.5 }
+				]
+			},
+			"images/buff/heiyuanq": {
+				"translate": [
+					{ "time": 0, "x": -488.85, "y": -12.75 }
+				]
+			}
+		}
+	}
+}
+}

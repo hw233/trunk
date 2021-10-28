@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="16" nextobjectid="362">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="7" name="图像图层 1" locked="1" offsetx="-20" offsety="-159">
+  <image source="../../../../map/jishi.jpg" width="760" height="1598"/>
+ </imagelayer>
+ <objectgroup id="11" name="general" offsetx="-6" offsety="12">
+  <object id="361" name="general1" type="General" gid="170" x="681" y="1173" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="13" name="gates">
+  <object id="278" name="1_1001_to_0_2" gid="174" x="0.833" y="1184.58" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="1" name="roads">
+  <object id="323" name="1" x="188" y="193">
+   <polyline points="-182.677,982.21 -61.4993,981.18 83.2053,980.767 86.783,734.498 85.0224,589.553 88.109,444.233 266.779,445.291 267.651,524.298 272.35,828.47 271.599,967.607 420.877,991.308 482.32,985.623"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="towers">
+  <object id="350" name="rhero3" type="Hero" gid="172" x="145.333" y="1057.67" width="10" height="10"/>
+  <object id="349" name="lhero2" type="Hero" gid="172" x="162.666" y="627.001" width="10" height="10"/>
+  <object id="328" name="lhero1" type="Hero" gid="172" x="355.333" y="725.333" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="674" y="1178.66" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="2" name="spawns" offsetx="38" offsety="0">
+  <object id="322" name="1_1" type="Spawn" gid="174" x="-43" y="1178.33" width="10" height="10"/>
+ </objectgroup>
+</map>

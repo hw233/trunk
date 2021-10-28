@@ -1,0 +1,71 @@
+CCEffect %{
+  techniques:
+  - passes:
+    - vert: vs
+      frag: fs
+      blendState:
+        targets:
+        - blend: true
+      rasterizerState:
+        cullMode: none
+      properties:
+        texture: { value: white }
+        alphaThreshold: { value: 0.5 }
+        saturation: { value: 3.0 }
+        minRadius: { value: 0.35 }
+        maxRadius: { value: 0.5 }
+        areaColor: { value: [1, 1, 1, 1], inspector: { type: color }}
+}%
+
+CCProgram vs %{
+  precision highp float;
+
+  #include <cc-global>
+  #include <cc-local>
+
+  in vec3 a_position;
+  in lowp vec4 a_color;
+  out lowp vec4 v_color;
+
+  in mediump vec2 a_uv0;
+  out mediump vec2 v_uv0;
+
+  void main () {
+    mat4 mvp;
+    #if CC_USE_MODEL
+      mvp = cc_matViewProj * cc_matWorld;
+    #else
+      mvp = cc_matViewProj;
+    #endif
+
+    v_uv0 = a_uv0;
+    v_color = a_color;
+
+    gl_Position = mvp * vec4(a_position, 1);
+  }
+}%
+
+CCProgram fs %{
+  precision highp float;
+
+  uniform sampler2D texture;
+  in lowp vec4 v_color;
+  in mediump vec2 v_uv0;
+
+  uniform PROPERTIES {
+    float alphaThreshold;
+    float minRadius;
+    float maxRadius;
+    float saturation;
+    vec4 areaColor;
+  };
+
+  void main () {
+    vec4 dst;
+    float dis = distance(v_uv0, vec2(0.5, 0.5));
+    float alpha = smoothstep(maxRadius*1.01, maxRadius*0.99, dis);
+    dst.a = alpha * areaColor.a * (dis - minRadius) / (1.0 - minRadius) * saturation;
+    dst.rgb = areaColor.rgb;
+    gl_FragColor = dst;
+  }
+}%

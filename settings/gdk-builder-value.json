@@ -1,0 +1,53 @@
+{
+    "general": {
+        "version": "1.0.1.0",
+        "buildtype": "b",
+        "env": 2,
+        "logLevel": "2",
+        "debugPanel": true,
+        "compressImage": true,
+        "ignoreAutoAtlas": true,
+        "ignoreImageSize": 100,
+        "ignoreImages": [
+            "resources/spine/common/E_com_zhucheng/E_com_zhucheng_beijing/E_com_zhucheng_beijing"
+        ],
+        "tinyPngTokens": [
+            "KspTl8tHp8F7gDgMZrxXvk5NVY91dg0p",
+            "wVNd0T9NGQc4sDdq76dcnn274gJdNb30",
+            "vQPgwMksW8G75816d5Ds4z93C25cKdQn",
+            "Dd9ddzP5bXHJ07TpsRrGmQwYvSFtnnG4",
+            "0JjV0VNBghXQ15mXxZBXdsVwxlMX9dWc",
+            "0gd2rQwrmRFHnCLlJRvbFjJ0TGzGrpd7"
+        ],
+        "tmxReplaces": [
+            "resources/view/pve/",
+            "resources/view/map/texture/worldmap/"
+        ]
+    },
+    "web-mobile": {
+        "compressJson": false,
+        "encryptJson": false,
+        "encryptJsonKey": "PCdpqUEvagpr7EWFeEVlAKtdGRM5oEuy",
+        "mergeJson": 12,
+        "delMergedJson": false,
+        "cacheJson": false,
+        "sdk-key": "TdOYMJYgQWt2Y4Ig25NZWbu4g6MV6wjc",
+        "jszipfiles": [
+            "main*.js",
+            "cocos2d-js-min*.js",
+            "cocos2d-js*.js",
+            "src/assets/plugins/*.js"
+        ],
+        "obfuscatorfiles": [
+            "boot*.js",
+            "src/assets/plugins/message*.js"
+        ]
+    },
+    "jsb-link": {
+        "mergeJson": 6,
+        "delMergedJson": true,
+        "serverRootDir": "https://h5.ftmc.fmggames.cn/ios/",
+        "localProjectManifestUrl": "db://assets/resources/view/hotupdate/data/project.txt",
+        "localVersionManifestUrl": "db://assets/resources/view/hotupdate/data/version.txt"
+    }
+}

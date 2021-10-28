@@ -1,0 +1,26 @@
+{
+    "deviceOrientation": "portrait",
+    "networkTimeout": {
+        "request": 1000000,
+        "connectSocket": 1000000,
+        "uploadFile": 1000000,
+        "downloadFile": 1000000
+    },
+    "plugins": {
+        "cocos": {
+            "provider": "wx7095f7fa398a2f30",
+            "version": "2.4.3",
+            "path": "cocos"
+        }
+    },
+    "subpackages": [
+        {
+            "name": "scripts",
+            "root": "subpackages/scripts"
+        },
+        {
+            "name": "main",
+            "root": "subpackages/main"
+        }
+    ]
+}

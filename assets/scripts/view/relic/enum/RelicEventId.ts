@@ -1,0 +1,14 @@
+/** 
+  * @Author: jiangping  
+  * @Description: 
+  * @Date: 2020-12-30 17:38:46 
+  */
+export enum RelicEventId {
+  MAP_CITY_INFO_CHANGE = "MAP_CITY_INFO_CHANGE", //地图上据点信息发生改变
+  MOVE_TO_TARGET_CITY = "MOVE_TO_TARGET_CITY", //视角移到到指定城池
+  RELIC_BROAD_CAST_POINT = "RELIC_BROAD_CAST_POINT",
+  MAP_CITY_INFO_CHANGE_BACK_UP_FOR_NOT_BROAD_CAST = "MAP_CITY_INFO_CHANGE_BACK_UP_FOR_NOT_BROAD_CAST", //地图上据点信息发生改变后端未广播
+
+  UPDATE_RELIC_PASS_PORT = "UPDATE_RELIC_PASS_PORT", //通行证更新
+}
+

@@ -1,0 +1,77 @@
+<div id="warp" class="warp">
+    <link rel="stylesheet" href="app://node_modules/font-awesome/css/font-awesome.min.css">
+
+    <!-- 选项卡 -->
+    <div class="tab">
+        <ul class="tab-bar layout horizontal group">
+            <template v-for="(name,info) in setting">
+                <li :class="{tab:true,'tab-active':tabIndex==name,'tab-unactive':tabIndex!=name}" @click="tabIndex=name">{{name.charAt(0).toUpperCase() + name.slice(1)}}</li>
+            </template>
+        </ul>
+    </div>
+
+    <!-- 选项内容 -->
+    <section class="form layout vertical self-stretch">
+        <template v-for="(name,info) in setting">
+            <ui-box-container class="self-stretch" v-show="tabIndex==name">
+                <!-- 设置内容 -->
+                <template v-for="(key,prop) in template[name]">
+
+                    <!-- 数组类型 -->
+                    <ui-section v-if="prop.type=='array'" class="layout vertical self-stretch">
+                        <div class="header">{{prop.name||key}}</div>
+                        <template v-for="i in info[key].length">
+                            <ui-prop name="[{{i}}]">
+                                <ui-input class="flex-1" v-value="info[key][i]"></ui-input>
+                                <ui-button class="transparent" @click="info[key].splice(i,1)">
+                                    <i class="icon-trash-empty"></i>
+                                </ui-button>
+                            </ui-prop>
+                        </template>
+                        <div>
+                            <ui-prop name="">
+                                <ui-button class="tiny green" @click="info[key].push('')">Add</ui-button>
+                            </ui-prop>
+                        </div>
+                    </ui-section>
+
+                    <!-- 文件类型 -->
+                    <ui-prop :name="prop.name||key" v-if="prop.type=='file'">
+                        <ui-input class="flex-1" :value="info[key]" readonly></ui-input>
+                        <ui-button class="transparent" @click="openFile(info, key, prop.name||key, prop.filters)">
+                            <i class="icon-doc-text"></i>
+                        </ui-button>
+                    </ui-prop>
+
+                    <!-- 随机字串 -->
+                    <ui-prop :name="prop.name||key" v-if="prop.type=='password'">
+                        <ui-input class="flex-1" :value="info[key]" readonly></ui-input>
+                        <ui-button class="green" @click="randomString(info, key, prop.length)">生成</ui-button>
+                    </ui-prop>
+
+                    <!-- 其他类型 -->
+                    <ui-prop :name="prop.name||key" v-if="prop.type!='array'&&prop.type!='file'&&prop.type!='password'">
+                        <ui-checkbox v-if="prop.type=='boolean'" v-value="info[key]"></ui-checkbox>
+                        <ui-select v-if="prop.type=='select'" v-value="info[key]">
+                            <option v-for="op in prop.option" :value="op[1]||op[0]">{{op[0]}}</option>
+                        </ui-select>
+                        <ui-input class="flex-1" v-if="prop.type=='version'" v-value="info[key]"></ui-input>
+                        <ui-num-input class="flex-1" v-if="prop.type=='number'" v-value="info[key]"></ui-num-input>
+                        <ui-num-input class="flex-1" v-if="prop.type=='int'" type="int" v-value="info[key]"></ui-num-input>
+                        <ui-input class="flex-1" v-if="prop.type=='string'" :placeholder="prop.placeholder||''" v-value="info[key]"></ui-input>
+                        <span v-if="prop.type=='text'">{{info[key]}}</span>
+                        <span v-if="prop.type=='time'">{{info[key]}}</span>
+                        <span v-if="prop.type=='timestamp'">{{new Date(info[key]).format("yyyy-MM-dd hh:mm:ss.S")}}</span>
+                    </ui-prop>
+
+                </template>
+            </ui-box-container>
+        </template>
+
+        <!-- 底部按钮 -->
+        <section class="bottom layout horizontal self-stretch">
+            <ui-button class="blue flex-1" @click="saveInfo">保存配置</ui-button>
+        </section>
+
+    </section>
+</div>

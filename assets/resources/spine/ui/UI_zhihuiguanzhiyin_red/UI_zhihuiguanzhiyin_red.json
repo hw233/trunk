@@ -1,0 +1,64 @@
+{
+"skeleton": { "hash": "Fe3K9um3mJ1vLGlccvNaDNF8Bw4", "spine": "3.7.92", "width": 0, "height": 0, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "images/hong0001", "parent": "root", "length": 239.49, "rotation": 89.44, "x": 536.72, "y": 342.7 }
+],
+"slots": [
+	{ "name": "images/hong0001", "bone": "images/hong0001" }
+],
+"skins": {
+	"default": {
+		"images/hong0001": {
+			"images/hong0001": { "width": 230, "height": 214 },
+			"images/hong0002": { "width": 230, "height": 214 },
+			"images/hong0003": { "width": 230, "height": 214 },
+			"images/hong0004": { "width": 230, "height": 214 },
+			"images/hong0005": { "width": 230, "height": 214 },
+			"images/hong0006": { "width": 230, "height": 214 },
+			"images/hong0007": { "width": 230, "height": 214 },
+			"images/hong0008": { "width": 230, "height": 214 },
+			"images/hong0009": { "width": 230, "height": 214 },
+			"images/hong0010": { "width": 230, "height": 214 },
+			"images/hong0011": { "width": 230, "height": 214 },
+			"images/hong0012": { "width": 230, "height": 214 },
+			"images/hong0013": { "width": 230, "height": 214 },
+			"images/hong0014": { "width": 230, "height": 214 }
+		}
+	}
+},
+"animations": {
+	"stand": {
+		"slots": {
+			"images/hong0001": {
+				"attachment": [
+					{ "time": 0, "name": "images/hong0001" },
+					{ "time": 0.0333, "name": "images/hong0002" },
+					{ "time": 0.0667, "name": "images/hong0003" },
+					{ "time": 0.1, "name": "images/hong0004" },
+					{ "time": 0.1333, "name": "images/hong0005" },
+					{ "time": 0.1667, "name": "images/hong0006" },
+					{ "time": 0.2, "name": "images/hong0007" },
+					{ "time": 0.2333, "name": "images/hong0008" },
+					{ "time": 0.2667, "name": "images/hong0009" },
+					{ "time": 0.3, "name": "images/hong0010" },
+					{ "time": 0.3333, "name": "images/hong0011" },
+					{ "time": 0.3667, "name": "images/hong0012" },
+					{ "time": 0.4, "name": "images/hong0013" },
+					{ "time": 0.4333, "name": "images/hong0014" }
+				]
+			}
+		},
+		"bones": {
+			"images/hong0001": {
+				"rotate": [
+					{ "time": 0, "angle": -89.44 }
+				],
+				"translate": [
+					{ "time": 0, "x": -533.98, "y": -345.53 }
+				]
+			}
+		}
+	}
+}
+}

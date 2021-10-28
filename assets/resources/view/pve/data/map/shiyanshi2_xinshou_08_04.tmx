@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="8" nextobjectid="381">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="1" name="图像图层 1" offsetx="-20" offsety="-159">
+  <image source="../../../../map/shiyanshi2.jpg" width="760" height="1598"/>
+ </imagelayer>
+ <objectgroup id="2" name="general">
+  <object id="269" name="lgeneral1" type="General" gid="170" x="519.75" y="1253.74" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="3" name="gates">
+  <object id="278" name="1_1001_to_0_2" gid="174" x="-10.167" y="-119.417" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="roads">
+  <object id="326" name="11" x="556" y="258">
+   <polyline points="125.989,-133.123 50.476,-65.7165 43.0415,47.9956 12.4451,165.621 -88.2782,272.298 -76.9087,316.461 62.5811,446.608 67.4581,493.004 -62.8189,596.249 -192.517,602.281 -362.283,616.883 -447.216,741.169 -414.261,794.703 -316.042,870.757 -157.443,875.488 -44.3467,988.28"/>
+  </object>
+  <object id="377" name="1" x="566.667" y="269.333">
+   <polyline points="125.989,-133.123 99.8093,-101.716 28.3748,-64.0044 27.1118,18.9543 5.49173,114.013 -29.4605,211.925 -90.9449,260.298 -76.9087,316.461 -24.0856,393.275 68.7914,457.004 13.1811,502.916 -64.517,592.948 -356.95,611.55 -458.216,723.169 -448.594,769.37 -396.042,812.09 -347.506,863.158 -245.443,876.821 -133.877,883.908 -44.3467,988.28"/>
+  </object>
+  <object id="379" name="22" x="69.3333" y="249.333">
+   <polyline points="-34.6763,512.877 62.0087,527.042 157.584,601.058 157.028,622.191 84.616,674.887 44.6883,728.108 70.9524,796.437 163.591,883.717 349.378,890.456 446.987,992.291"/>
+  </object>
+  <object id="371" name="2" x="62.6667" y="274.667">
+   <polyline points="-26.6763,500.877 68.0087,490.042 140.584,562.058 146.028,618.191 91.616,640.887 50.6883,713.108 58.9524,770.437 140.591,847.717 326.378,863.456 456.987,972.291"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="towers">
+  <object id="349" name="lhero2" type="Hero" gid="172" x="344.999" y="631.333" width="10" height="10"/>
+  <object id="328" name="rhero1" type="Hero" gid="172" x="187.666" y="418.338" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="6" name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="518.333" y="1253.32" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="7" name="spawns">
+  <object id="324" name="11_2" type="Spawn" gid="174" x="679.667" y="120.333" width="10" height="10"/>
+  <object id="376" name="1_1" type="Spawn" gid="174" x="691" y="131" width="10" height="10"/>
+  <object id="322" name="3_1" type="Spawn" gid="174" x="686" y="123.334" width="10" height="10"/>
+  <object id="380" name="22_2" type="Spawn" gid="174" x="20.3333" y="765.667" width="10" height="10"/>
+  <object id="370" name="2_1" type="Spawn" gid="174" x="22.9997" y="772.333" width="10" height="10"/>
+ </objectgroup>
+</map>

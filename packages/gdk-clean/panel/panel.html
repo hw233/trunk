@@ -1,0 +1,112 @@
+<div id="warp" class="warp">
+    <link rel="stylesheet" href="app://node_modules/font-awesome/css/font-awesome.min.css">
+
+    <section class="res">
+        <div class="layout vertical self-stretch flex-1">
+
+            <!-- 选项卡 -->
+            <div class="tab">
+                <ul class="tab-bar layout horizontal group">
+                    <li :class="{tab:true,'tab-active':tabIndex==1,'tab-unactive':tabIndex!=1}" @click="refreshTab(1)">Prefab</li>
+                    <li :class="{tab:true,'tab-active':tabIndex==2,'tab-unactive':tabIndex!=2}" @click="refreshTab(2)">Folder</li>
+                    <li :class="{tab:true,'tab-active':tabIndex==3,'tab-unactive':tabIndex!=3}" @click="refreshTab(3)">Replace</li>
+                </ul>
+            </div>
+
+            <!-- 预制体 -->
+            <ui-box-container class="self-stretch" style="margin-bottom: 10px;" v-show="tabIndex==1">
+                <div class="header">Prefab</div>
+                <template v-for="i in prefabs.length">
+                    <ui-prop name="[{{i}}]" style="padding-top:10px;">
+                        <ui-asset class="flex-1" type="cc.Prefab" v-value="prefabs[i]" @change="refreshPrefab"></ui-asset>
+                        <ui-button class="transparent" @click="prefabs.splice(i,1)">
+                            <i class="icon-trash-empty"></i>
+                        </ui-button>
+                    </ui-prop>
+                </template>
+                <div>
+                    <ui-prop name="">
+                        <ui-button class="tiny green" @click="prefabs.push('')">Add</ui-button>
+                    </ui-prop>
+                </div>
+            </ui-box-container>
+            <!-- 文件夹 -->
+            <ui-box-container class="self-stretch" style="margin-bottom: 10px;" v-show="tabIndex==2">
+                <ui-prop name="Folder">
+                    <ui-input class="flex-1" placeholder="资源目录" v-value="folder" readonly></ui-input>
+                    <ui-button class="green" @click="refreshFolder">Select</ui-button>
+                </ui-prop>
+            </ui-box-container>
+            <!-- 额外属性 -->
+            <ui-box-container class="self-stretch" v-show="tabIndex!=3">
+                <div class="header">Option</div>
+                <ui-prop name="Type">
+                    <ui-select v-value="types" @change="refresh">
+                        <option value="texture,sprite-frame">texture,sprite-frame</option>
+                        <option value="texture">texture</option>
+                        <option value="sprite-frame">sprite-frame</option>
+                    </ui-select>
+                </ui-prop>
+                <ui-prop name="Exclude">
+                    <ui-input class="flex-1" placeholder="排除的路径以逗号分隔" v-value="exclude" @change="refreshResources"></ui-input>
+                </ui-prop>
+            </ui-box-container>
+
+            <!-- 替换资源 -->
+            <ui-box-container class="self-stretch" style="margin-bottom: 10px;" v-show="tabIndex==3">
+                <div class="header">Assets</div>
+                <template v-for="i in assets.length">
+                    <ui-prop name="[{{i}}]" style="padding-top:10px;">
+                        <ui-asset class="flex-1" type="cc.SpriteFrame" v-value="assets[i]" @change="refreshAsset"></ui-asset>
+                        <ui-button class="transparent" @click="spliceAssets(i,1)">
+                            <i class="icon-trash-empty"></i>
+                        </ui-button>
+                    </ui-prop>
+                </template>
+                <div>
+                    <ui-prop name="" style="margin-right: 10px;">
+                        <ui-button class="tiny green" @click="assets.push('')">Add</ui-button>
+                        <ui-button class="tiny blue" @click="moveRes()">Move</ui-button>
+                        <ui-button class="tiny red" @click="deleteRes()">Delete</ui-button>
+                    </ui-prop>
+                </div>
+            </ui-box-container>
+            <ui-box-container class="self-stretch" v-show="tabIndex==3">
+                <div class="header">Replace</div>
+                <ui-prop name="[-]" style="padding-top:10px;">
+                    <ui-asset class="flex-1" type="cc.SpriteFrame" v-value="assetReplace" @change="refreshAssetReplace"></ui-asset>
+                </ui-prop>
+            </ui-box-container>
+
+        </div>
+    </section>
+
+    <section class="form">
+        <template v-for="(key,obj) in items">
+            <ui-section class="self-stretch">
+                <div class="header">
+                    <ui-checkbox :title="all" v-value="obj.checked" @change="checkedRes(key)"></ui-checkbox>
+                    <span>{{key}}</span>
+                </div>
+                <ul>
+                    <li v-for="item in obj.arr">
+                        <ui-checkbox class="path" :title="item.path" v-value="item.checked" @change="refreshChecked(key)">{{item.url.substr(key.length + 1)}}</ui-checkbox>
+                        <ui-button class="small transparent" @click="jumpRes(item.uuid)">
+                            <i class="fa fa-link"></i>
+                        </ui-button>
+                    </li>
+                </ul>
+            </ui-section>
+        </template>
+    </section>
+
+    <section class="layout horizontal bottom">
+        <ui-button class="medium" @click="selectAll">All</ui-button>
+        <ui-button class="medium {{tabIndex==2?'red':'blue'}}" @click="doit">{{['Move','Remove','Replace'][tabIndex-1]}}</ui-button>
+    </section>
+
+    <!-- 忙动画 -->
+    <div class="self-stretch" style="transition: .25s ease;" v-show="busy">
+        <ui-loader></ui-loader>
+    </div>
+</div>

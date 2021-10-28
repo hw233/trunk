@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>游戏</title>
+
+    <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
+
+    <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- force webkit on 360 -->
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <!-- force edge on IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- force full screen on some browser -->
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+
+    <!-- force screen orientation on some browser -->
+    <meta name="screen-orientation" content="<%=orientation%>" />
+    <meta name="x5-orientation" content="<%=orientation%>">
+
+    <!--fix fireball/issues/3568 -->
+    <!--<meta name="browsermode" content="application">-->
+    <meta name="x5-page-mode" content="app">
+
+    <!--<link rel="apple-touch-icon" href=".png" />-->
+    <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+    <div id="splash">
+        <div class="progress-bar stripes">
+            <span style="width: 0%"></span>
+        </div>
+    </div>
+    <script src="src/settings.js" charset="utf-8"></script>
+    <script src="jszip.min.js" charset="utf-8"></script>
+    <script src="boot.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        (function () {
+            // 启动页面
+            var splash = document.getElementById('splash');
+            var progressBar = splash.querySelector('.progress-bar span');
+            var settings = window._CCSettings;
+            var debug = settings.debug;
+            splash.style.display = 'block';
+            progressBar.style.width = '0%';
+            // 启动游戏
+            var boot = new Boot();
+            var files = ["main.js"];
+            files.push(debug ? "cocos2d-js.js" : "cocos2d-js-min.js");
+            settings.jsList.forEach(x => files.push('src/' + x));
+            settings.jsList.length = 0;
+            boot.progressBar = progressBar;
+            boot.run(files);
+        })();
+    </script>
+</body>
+
+</html>

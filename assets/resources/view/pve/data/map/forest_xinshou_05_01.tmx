@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="18" nextobjectid="350">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="7" name="图像图层 1" offsetx="0" offsety="-2">
+  <image source="../../../../map/forest.jpg" width="760" height="1320"/>
+ </imagelayer>
+ <objectgroup id="15" name="hang"/>
+ <objectgroup id="11" name="general">
+  <object id="269" name="general1" type="General" gid="170" x="12.083" y="1184.42" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="13" name="gates">
+  <object id="278" name="1_1001_to_0_2" gid="174" x="-10.167" y="-119.417" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="1" name="roads">
+  <object id="326" name="1" x="383" y="195.333">
+   <polyline points="-364.344,-56.1227 -294.5,-44.4867 -128.795,-37.5657 15.45,-38.169 107.109,-0.1 109.737,97.384 111.282,165.006 98.059,228.928 42.45,261.473 -88.613,266.097 -124.259,314.182 -122.8,545.619 -85.591,584.634 30.79,586.903 115.945,616.926 116.682,967.145 -367.68,982.289"/>
+  </object>
+  <object id="348" name="11" x="391" y="192">
+   <polyline points="-364.344,-56.1227 -294.5,-44.4867 -128.795,-37.5657 15.45,-38.169 107.109,-0.1 109.737,97.384 111.282,165.006 98.059,228.928 42.45,261.473 -88.613,266.097 -124.259,314.182 -122.8,545.619 -85.591,584.634 30.79,586.903 115.945,616.926 116.682,967.145 -367.68,982.289"/>
+  </object>
+  <object id="349" name="111" x="398" y="197">
+   <polyline points="-364.344,-56.1227 -294.5,-44.4867 -128.795,-37.5657 15.45,-38.169 107.109,-0.1 109.737,97.384 111.282,165.006 98.059,228.928 42.45,261.473 -88.613,266.097 -124.259,314.182 -122.8,545.619 -85.591,584.634 30.79,586.903 115.945,616.926 116.682,967.145 -367.68,982.289"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="towers">
+  <object id="328" name="rhero4" type="Hero" gid="172" x="374" y="854" width="10" height="10"/>
+  <object id="338" name="rhero2" type="Hero" gid="172" x="354" y="244" width="10" height="10"/>
+  <object id="339" name="lhero1" type="Hero" gid="172" x="623" y="363" width="10" height="10"/>
+  <object id="346" name="rhero3" type="Hero" gid="172" x="371" y="551" width="10" height="10"/>
+  <object id="347" name="lhero5" type="Hero" gid="172" x="610" y="959" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="protege">
+  <object id="247" name="1" type="Spawn" gid="218" x="10.909" y="1174.36" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="2" name="spawns">
+  <object id="325" name="111" type="Spawn" gid="174" x="22.667" y="148" width="10" height="10"/>
+  <object id="324" name="11" type="Spawn" gid="174" x="22.333" y="146.333" width="10" height="10"/>
+  <object id="322" name="1" type="Spawn" gid="174" x="25.667" y="145.667" width="10" height="10"/>
+ </objectgroup>
+</map>

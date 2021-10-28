@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="16" nextobjectid="367">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="7" name="图像图层 1" locked="1" offsetx="-20" offsety="-159">
+  <image source="../../../../map/tingchechang.jpg" width="760" height="1598"/>
+ </imagelayer>
+ <objectgroup id="11" name="general">
+  <object id="269" name="rgeneral1" type="General" gid="170" x="85.0833" y="1268.41" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="13" name="gates">
+  <object id="278" name="1_1001_to_0_2" gid="174" x="-10.167" y="-119.417" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="1" name="roads">
+  <object id="327" name="111" x="706.667" y="226">
+   <polyline points="-679.344,-103.789 -582.713,-79.3 -460.014,-91.3213 -194.805,-91.4707 -162.156,-32.86 -178.837,72.3344 -152.224,468.634 -178.311,680.637 -174.146,757.029 -217.354,815.714 -392.532,809.854 -431.066,751.925 -440.562,568.865 -420.455,402.631 -434.16,317.657 -466.658,285.953 -529.84,292.766 -584.985,278.222 -621.018,310.848 -599.753,466.761 -617.913,729.128 -605.301,867.605 -615.013,1034.96"/>
+  </object>
+  <object id="326" name="11" x="692" y="187.333">
+   <polyline points="-660.678,-54.4563 -558.499,-54.82 -288.257,-27.6993 -191.877,-45.7633 -137.369,-12.4763 -164.389,214.926 -168.01,424.982 -138.141,664.91 -154.454,801.988 -193.004,843.3 -281.455,857.627 -397.57,849.662 -415.517,815.615 -404.95,691.55 -431.882,517.503 -408.285,349.856 -452.616,313.725 -578.198,310.299 -613.563,344.473 -588.313,610.977 -597.68,1072.28"/>
+  </object>
+  <object id="323" name="1" x="188" y="193">
+   <polyline points="-158.677,-52.4567 -58.166,-33.8201 197.539,-54.566 327.783,-32.1687 368.689,137.553 344.109,550.9 362.779,749.624 318.318,845.964 107.016,833.803 93.932,779.607 101.446,551.513 70.7967,336.364 -9.357,311.569 -77.5425,324.93 -108.642,366.549 -83.123,735.303 -105.68,1060.29"/>
+  </object>
+  <object id="364" name="222" x="64" y="214.667">
+   <polyline points="-21.3437,284.878 23.1363,289.895 10.0966,333.802 31.6897,486.763 18.3206,1045.62"/>
+  </object>
+  <object id="365" name="22" x="74.6667" y="225.333">
+   <polyline points="-36.0107,275.544 -0.570067,291.135 14.3564,365.43 18.3206,1045.62"/>
+  </object>
+  <object id="366" name="2" x="74.6667" y="225.333">
+   <polyline points="-34.677,284.878 -3.2367,277.802 22.3564,304.097 16.9873,1038.95"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="towers">
+  <object id="360" name="lhero5" type="Hero" gid="172" x="85" y="410" width="10" height="10"/>
+  <object id="359" name="rhero4" type="Hero" gid="172" x="400" y="906" width="10" height="10"/>
+  <object id="349" name="lhero2" type="Hero" gid="172" x="174.999" y="634.667" width="10" height="10"/>
+  <object id="350" name="lhero3" type="Hero" gid="172" x="645" y="809.67" width="10" height="10"/>
+  <object id="328" name="lhero1" type="Hero" gid="172" x="645.666" y="1009.67" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="83.6663" y="1267.99" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="2" name="spawns">
+  <object id="325" name="111_2" type="Spawn" gid="174" x="25.0003" y="138" width="10" height="10"/>
+  <object id="324" name="11_2" type="Spawn" gid="174" x="16.0003" y="135.666" width="10" height="10"/>
+  <object id="322" name="1_1" type="Spawn" gid="174" x="22.3333" y="138.667" width="10" height="10"/>
+  <object id="361" name="222_2" type="Spawn" gid="174" x="25.667" y="509.168" width="10" height="10"/>
+  <object id="362" name="22_2" type="Spawn" gid="174" x="19.332" y="505.498" width="10" height="10"/>
+  <object id="363" name="2_1" type="Spawn" gid="174" x="17.666" y="511.168" width="10" height="10"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="13" nextobjectid="270">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="7" name="图像图层 1" locked="1">
+  <image source="C:/Users/2010104-0009/Desktop/策划文档/地图测试/720/路线+地图结构/099.jpg" width="720" height="1280"/>
+ </imagelayer>
+ <objectgroup id="11" name="general">
+  <object id="269" name="general1" type="General" gid="170" x="353.75" y="502.083" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="1" name="roads">
+  <object id="265" name="4" x="-3.33333" y="104.333">
+   <polyline points="378.499,71.083 361.371,979.456"/>
+  </object>
+  <object id="262" name="3" x="-78" y="375.333">
+   <polyline points="113.166,109.75 198.848,114.849 206.428,467.4 433.356,477.079 434.329,710.998"/>
+  </object>
+  <object id="263" name="2" x="111.333" y="508">
+   <polyline points="573.833,-212.25 493.618,-196.408 475.081,340.624 246.388,342.467 244.329,576.331"/>
+  </object>
+  <object id="266" name="1" x="290.759" y="103.686">
+   <polyline points="53.1572,71.3964 61.6535,982.644"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="towers">
+  <object id="28" name="rhero3" type="Hero" gid="172" x="480.302" y="769.501" width="10" height="10"/>
+  <object id="221" name="rhero2" type="Hero" gid="172" x="480.916" y="521" width="10" height="10"/>
+  <object id="243" name="rhero1" type="Hero" gid="172" x="480.417" y="289.947" width="10" height="10"/>
+  <object id="255" name="lhero4" type="Hero" gid="172" x="230.849" y="291.152" width="10" height="10"/>
+  <object id="256" name="lhero5" type="Hero" gid="172" x="229.917" y="521.584" width="10" height="10"/>
+  <object id="257" name="lhero6" type="Hero" gid="172" x="230.166" y="769.167" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="protege">
+  <object id="247" name="1" type="Spawn" gid="218" x="351.076" y="1090.52" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="2" name="spawns">
+  <object id="264" name="4" type="Spawn" gid="174" x="370" y="180.333" width="10" height="10"/>
+  <object id="2" name="3" type="Spawn" gid="174" x="30.2503" y="489.58" width="10" height="10"/>
+  <object id="258" name="2" type="Spawn" gid="174" x="680.333" y="300.333" width="10" height="10"/>
+  <object id="259" name="1" type="Spawn" gid="174" x="340" y="180.417" width="10" height="10"/>
+ </objectgroup>
+</map>

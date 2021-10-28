@@ -1,0 +1,106 @@
+{
+"skeleton": { "hash": "Wyht+xssQTKo45CxD4l6BJqoNTU", "spine": "3.7.92", "width": 0, "height": 0, "images": "", "audio": "H:/工作-秦建华/spine输出/蓄力" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "images/xuli0001", "parent": "root", "length": 182.04, "rotation": 91.26, "x": 82.5, "y": -2.5 },
+	{ "name": "images/yuan", "parent": "root", "length": 243.12, "rotation": 90, "x": 449.92, "y": -1.01 }
+],
+"slots": [
+	{ "name": "images/xuli0001", "bone": "images/xuli0001", "blend": "additive" },
+	{ "name": "images/yuan", "bone": "images/yuan", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"images/xuli0001": {
+			"images/xuli0002": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 },
+			"images/xuli0003": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 },
+			"images/xuli0004": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 },
+			"images/xuli0005": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 },
+			"images/xuli0006": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 },
+			"images/xuli0008": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 },
+			"images/xuli0010": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 },
+			"images/xuli0012": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 },
+			"images/xuli0014": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 },
+			"images/xuli0016": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 },
+			"images/xuli0018": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 },
+			"images/xuli0020": { "x": 0.5, "y": 0.5, "width": 751, "height": 707 }
+		},
+		"images/yuan": {
+			"images/yuan": { "x": -3.44, "y": -4.35, "rotation": -90, "width": 220, "height": 219 }
+		}
+	}
+},
+"animations": {
+	"stand": {
+		"slots": {
+			"images/xuli0001": {
+				"color": [
+					{ "time": 0.6333, "color": "ffffffff" },
+					{ "time": 0.7333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "images/xuli0002" },
+					{ "time": 0.0667, "name": "images/xuli0003" },
+					{ "time": 0.1, "name": "images/xuli0004" },
+					{ "time": 0.1333, "name": "images/xuli0005" },
+					{ "time": 0.1667, "name": "images/xuli0006" },
+					{ "time": 0.2333, "name": "images/xuli0008" },
+					{ "time": 0.3, "name": "images/xuli0010" },
+					{ "time": 0.3667, "name": "images/xuli0012" },
+					{ "time": 0.4333, "name": "images/xuli0014" },
+					{ "time": 0.5, "name": "images/xuli0016" },
+					{ "time": 0.5667, "name": "images/xuli0018" },
+					{ "time": 0.6333, "name": "images/xuli0020" },
+					{ "time": 0.7333, "name": null }
+				]
+			},
+			"images/yuan": {
+				"color": [
+					{ "time": 0.1, "color": "ffffffff" },
+					{ "time": 0.3667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "images/yuan" },
+					{ "time": 0.4, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"images/xuli0001": {
+				"rotate": [
+					{ "time": 0, "angle": -91.26, "curve": "stepped" },
+					{ "time": 0.0333, "angle": -91.26 }
+				],
+				"translate": [
+					{ "time": 0, "x": -67.63, "y": 6 },
+					{ "time": 0.0333, "x": -56, "y": 6 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.5, "y": 0.5 },
+					{ "time": 0.0333, "x": 1, "y": 1 }
+				],
+				"shear": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"images/yuan": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": -445.52, "y": 9.66 },
+					{ "time": 0.1, "x": -445.52, "y": 16 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.3, "y": 0.3 },
+					{ "time": 0.1, "x": 1.08, "y": 1.08 },
+					{ "time": 0.3667, "x": 1.4, "y": 1.4 }
+				],
+				"shear": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

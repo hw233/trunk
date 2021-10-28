@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="9" nextobjectid="414">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="8" name="图像图层 2" offsetx="-11" offsety="-170">
+  <image source="../../../../map/gonghuiboss_01.jpg" width="760" height="1598"/>
+ </imagelayer>
+ <objectgroup id="2" name="general">
+  <object id="269" name="lgeneral1" type="General" gid="170" x="621.584" y="1131.58" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="3" name="gates">
+  <object id="403" name="3_1001_to_0_4" gid="174" x="3.792" y="1039.98" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="roads">
+  <object id="389" name="3" x="44.667" y="239.667">
+   <polyline points="-7.0104,-153.455 61.3873,-90.897 200.598,47.2174 333.028,177.202 451.984,300.299 350.24,413.732 218.32,539.685 -28.048,792.138"/>
+  </object>
+  <object id="396" name="4" x="572.333" y="363.333">
+   <polyline points="79.989,-164.122 -101.612,40.4367 -123.069,106.551 -198.639,123.869 -377.682,310.965 -208.427,490.065 -60.6801,634.019 57.9874,753.951"/>
+  </object>
+  <object id="413" name="5" x="827" y="128">
+   <polyline points="-60.6801,634.019 57.9874,753.951"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="towers">
+  <object id="360" name="rhero2" type="Hero" gid="172" x="269.333" y="906.333" width="10" height="10"/>
+  <object id="359" name="rhero3" type="Hero" gid="172" x="405" y="347" width="10" height="10"/>
+  <object id="349" name="rhero4" type="Hero" gid="172" x="289.999" y="445.334" width="10" height="10"/>
+  <object id="350" name="rhero6" type="Hero" gid="172" x="387.667" y="767.003" width="10" height="10"/>
+  <object id="410" name="rhero1" type="Hero" gid="172" x="538" y="592" width="10" height="10"/>
+  <object id="411" name="rhero5" type="Hero" gid="172" x="150" y="756" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="6" name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="629.917" y="1128.32" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="7" name="spawns">
+  <object id="407" name="4_4" type="Spawn" gid="174" x="655" y="203" width="10" height="10"/>
+  <object id="405" name="3_1" type="Spawn" gid="174" x="33.6667" y="87" width="10" height="10"/>
+  <object id="412" name="5_4" type="Spawn" gid="174" x="11" y="1017" width="10" height="10"/>
+ </objectgroup>
+</map>

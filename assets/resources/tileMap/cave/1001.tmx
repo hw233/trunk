@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="hexagonal" renderorder="right-down" width="12" height="20" tilewidth="144" tileheight="150" infinite="0" hexsidelength="70" staggeraxis="y" staggerindex="odd" nextlayerid="12" nextobjectid="321">
+ <tileset firstgid="1" name="mapAtals" tilewidth="144" tileheight="281" tilecount="44" columns="11">
+  <tileoffset x="0" y="42"/>
+  <image source="../mapAtals.png" width="1584" height="1124"/>
+ </tileset>
+ <tileset firstgid="45" name="cross" tilewidth="144" tileheight="242" tilecount="9" columns="3">
+  <tileoffset x="0" y="42"/>
+  <image source="../crossMapAtals.png" width="432" height="726"/>
+ </tileset>
+ <layer id="11" name="地表" width="12" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,52,52,52,52,52,52,52,52,0,0,
+0,0,52,49,49,49,49,52,45,45,0,0,
+0,0,52,49,51,51,51,49,45,45,0,0,
+0,0,52,49,49,51,51,49,52,52,0,0,
+0,0,52,52,52,49,51,51,49,52,0,0,
+0,0,52,49,52,49,51,49,52,52,0,0,
+0,0,52,49,52,49,45,46,49,52,0,0,
+0,0,52,49,49,47,48,52,49,52,0,0,
+0,0,52,52,49,52,53,53,49,52,0,0,
+0,0,52,52,49,53,53,49,52,52,0,0,
+0,0,52,52,49,52,49,49,49,52,0,0,
+0,0,52,49,52,49,52,52,49,52,0,0,
+0,0,52,49,52,52,52,53,49,52,0,0,
+0,0,52,49,52,53,53,45,45,52,0,0,
+0,0,52,49,52,53,53,45,45,52,0,0,
+0,0,52,52,52,52,52,52,52,52,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="points" visible="0">
+  <object id="286" name="1" x="504" y="1870">
+   <point/>
+  </object>
+  <object id="287" name="2" x="576" y="1760">
+   <point/>
+  </object>
+  <object id="288" name="3" x="504" y="1650">
+   <point/>
+  </object>
+  <object id="289" name="4" x="576" y="1540">
+   <point/>
+  </object>
+  <object id="290" name="5" x="648" y="1430">
+   <point/>
+  </object>
+  <object id="291" name="6" x="720" y="1320">
+   <point/>
+  </object>
+  <object id="292" name="7" x="648" y="1210">
+   <point/>
+  </object>
+  <object id="293" name="8" x="720" y="1100">
+   <point/>
+  </object>
+  <object id="294" name="9" x="792" y="990">
+   <point/>
+  </object>
+  <object id="295" name="10" x="864" y="880">
+   <point/>
+  </object>
+  <object id="296" name="11" x="792" y="770">
+   <point/>
+  </object>
+  <object id="297" name="12" x="720" y="660">
+   <point/>
+  </object>
+  <object id="298" name="13" x="576" y="660">
+   <point/>
+  </object>
+  <object id="299" name="14" x="504" y="550">
+   <point/>
+  </object>
+  <object id="300" name="15" x="576" y="440">
+   <point/>
+  </object>
+  <object id="301" name="16" x="720" y="440">
+   <point/>
+  </object>
+  <object id="302" name="17" x="864" y="440">
+   <point/>
+  </object>
+  <object id="303" name="18" x="1008" y="440">
+   <point/>
+  </object>
+  <object id="304" name="19" x="1080" y="550">
+   <point/>
+  </object>
+  <object id="305" name="20" x="1152" y="660">
+   <point/>
+  </object>
+  <object id="306" name="21" x="1224" y="770">
+   <point/>
+  </object>
+  <object id="307" name="22" x="1152" y="880">
+   <point/>
+  </object>
+  <object id="308" name="23" x="1224" y="990">
+   <point/>
+  </object>
+  <object id="309" name="24" x="1296" y="1100">
+   <point/>
+  </object>
+  <object id="310" name="25" x="1224" y="1210">
+   <point/>
+  </object>
+  <object id="311" name="26" x="1152" y="1320">
+   <point/>
+  </object>
+  <object id="312" name="27" x="1080" y="1430">
+   <point/>
+  </object>
+  <object id="313" name="28" x="936" y="1430">
+   <point/>
+  </object>
+  <object id="314" name="29" x="864" y="1540">
+   <point/>
+  </object>
+  <object id="315" name="30" x="576" y="1100">
+   <point/>
+  </object>
+  <object id="316" name="31" x="504" y="990">
+   <point/>
+  </object>
+  <object id="317" name="32" x="576" y="880">
+   <point/>
+  </object>
+  <object id="318" name="33" x="1224" y="1430">
+   <point/>
+  </object>
+  <object id="319" name="34" x="1296" y="1540">
+   <point/>
+  </object>
+  <object id="320" name="35" x="1224" y="1650">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

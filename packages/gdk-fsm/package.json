@@ -1,0 +1,24 @@
+{
+    "name": "gdk-fsm",
+    "version": "0.1.0",
+    "description": "Game Developer Tit;",
+    "author": "sthoo.huang",
+    "main": "main.js",
+    "main-menu": {
+
+    },
+    "scene-script": "scripts/scene-walker.js",
+    "panel": {
+        "main": "panel/index.js",
+        "type": "dockable",
+        "title": "状态机",
+        "width": 1140,
+        "height": 650
+    },
+    "reload": {
+        "ignore": [
+            "runtime-res/**/*",
+            "src/**/*"
+        ]
+    }
+}

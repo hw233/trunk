@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="8" nextobjectid="417">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="1" name="图像图层 1" offsetx="-20" offsety="-159">
+  <image source="../../../../map/surival_01.jpg" width="760" height="1598"/>
+ </imagelayer>
+ <objectgroup id="2" name="general">
+  <object id="269" name="rgeneral1" type="General" gid="170" x="110" y="160" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="3" name="gates">
+  <object id="278" name="1_1001_to_0_2" gid="174" x="-88.8337" y="-108.75" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="roads">
+  <object id="323" name="1" x="277" y="91.6667">
+   <polyline points="-157,68.3333 -157,1098.33 83,1098.33 83,-1.6667 323,-1.6667 333,1078.33"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="towers">
+  <object id="328" name="point1" type="Monster" gid="172" x="180" y="280" width="10" height="10"/>
+  <object id="390" name="point2" type="Monster" gid="172" x="40" y="390" width="10" height="10"/>
+  <object id="392" name="point4" type="Monster" gid="172" x="50" y="680" width="10" height="10"/>
+  <object id="388" name="point3" type="Monster" gid="172" x="190" y="480" width="10" height="10"/>
+  <object id="393" name="point5" type="Monster" gid="172" x="180" y="770" width="10" height="10"/>
+  <object id="395" name="point6" type="Monster" gid="172" x="50" y="1010" width="10" height="10"/>
+  <object id="397" name="point7" type="Monster" gid="172" x="230" y="1070" width="10" height="10"/>
+  <object id="398" name="point8" type="Monster" gid="172" x="430" y="940" width="10" height="10"/>
+  <object id="400" name="point9" type="Monster" gid="172" x="430" y="780" width="10" height="10"/>
+  <object id="401" name="point10" type="Monster" gid="172" x="300" y="610" width="10" height="10"/>
+  <object id="404" name="point11" type="Monster" gid="172" x="420" y="370" width="10" height="10"/>
+  <object id="405" name="point12" type="Monster" gid="172" x="300" y="180" width="10" height="10"/>
+  <object id="406" name="point13" type="Monster" gid="172" x="470" y="130" width="10" height="10"/>
+  <object id="408" name="point14" type="Monster" gid="172" x="650" y="270" width="10" height="10"/>
+  <object id="411" name="point15" type="Monster" gid="172" x="550" y="450" width="10" height="10"/>
+  <object id="412" name="point16" type="Monster" gid="172" x="650" y="630" width="10" height="10"/>
+  <object id="413" name="point17" type="Monster" gid="172" x="540" y="770" width="10" height="10"/>
+  <object id="414" name="point18" type="Monster" gid="172" x="650" y="870" width="10" height="10"/>
+  <object id="415" name="point19" type="Monster" gid="172" x="540" y="1000" width="10" height="10"/>
+  <object id="416" name="point20" type="Monster" gid="172" x="660" y="1100" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="6" name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="610" y="1180" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="7" name="spawns">
+  <object id="322" name="1_1" type="Spawn" gid="174" x="110" y="160" width="10" height="10"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,93 @@
+{
+"skeleton": { "hash": "E4JgnXZPpqkbbcD2D9UPzuMnRuc", "spine": "3.7.92", "width": 0, "height": 0, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "images/huifu0001", "parent": "root", "length": 177, "rotation": 90, "x": 1.5, "y": 57.5 }
+],
+"slots": [
+	{ "name": "images/huifu0001", "bone": "images/huifu0001", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"images/huifu0001": {
+			"images/huifu0001": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0002": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0003": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0004": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0005": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0006": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0007": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0008": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0009": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0011": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0013": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0015": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0017": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0019": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0021": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0023": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0025": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0027": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0029": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0031": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0033": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 },
+			"images/huifu0035": { "x": 0.5, "y": -0.5, "rotation": -90, "width": 199, "height": 231 }
+		}
+	}
+},
+"events": {
+	"atk": {}
+},
+"animations": {
+	"stand": {
+		"slots": {
+			"images/huifu0001": {
+				"attachment": [
+					{ "time": 0, "name": "images/huifu0001" },
+					{ "time": 0.0667, "name": "images/huifu0002" },
+					{ "time": 0.1, "name": "images/huifu0003" },
+					{ "time": 0.1667, "name": "images/huifu0004" },
+					{ "time": 0.2333, "name": "images/huifu0005" },
+					{ "time": 0.2667, "name": "images/huifu0006" },
+					{ "time": 0.3333, "name": "images/huifu0007" },
+					{ "time": 0.4, "name": "images/huifu0008" },
+					{ "time": 0.4333, "name": "images/huifu0009" },
+					{ "time": 0.5667, "name": "images/huifu0011" },
+					{ "time": 0.6667, "name": "images/huifu0013" },
+					{ "time": 0.7667, "name": "images/huifu0015" },
+					{ "time": 0.9, "name": "images/huifu0017" },
+					{ "time": 1, "name": "images/huifu0019" },
+					{ "time": 1.1, "name": "images/huifu0021" },
+					{ "time": 1.2333, "name": "images/huifu0023" },
+					{ "time": 1.3333, "name": "images/huifu0025" },
+					{ "time": 1.4333, "name": "images/huifu0027" },
+					{ "time": 1.5667, "name": "images/huifu0029" },
+					{ "time": 1.6667, "name": "images/huifu0031" },
+					{ "time": 1.7667, "name": "images/huifu0033" },
+					{ "time": 1.9, "name": "images/huifu0035" },
+					{ "time": 2, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"images/huifu0001": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": -3, "y": -3.17 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				],
+				"shear": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.3333, "name": "atk" }
+		]
+	}
+}
+}

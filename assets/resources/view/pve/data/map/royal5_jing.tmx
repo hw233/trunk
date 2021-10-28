@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="8" nextobjectid="396">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="1" name="图像图层 1" offsetx="0" offsety="-10">
+  <image source="../../../../map/royal5.png" width="720" height="1326"/>
+ </imagelayer>
+ <objectgroup id="2" name="general">
+  <object id="269" name="rgeneral1" type="General" gid="170" x="10.4163" y="349.406" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="3" name="gates">
+  <object id="278" name="1_1001_to_0_2" gid="174" x="-88.8337" y="-108.75" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="roads">
+  <object id="389" name="2" x="178.666" y="-1006.33">
+   <polyline points="517.99,1169.39 171.69,1170.17 153.889,1190.33 150.748,1337.94 135.605,1354.88 -155.513,1349.49"/>
+  </object>
+  <object id="366" name="1" x="168" y="-651.001">
+   <polyline points="525.99,1177.28 180.357,1179.39 163.223,1156.89 160.081,1023.82 141.605,1000.1 -144.18,1002.04"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="towers">
+  <object id="391" name="rhero3" type="Hero" gid="172" x="220" y="258.33" width="10" height="10"/>
+  <object id="393" name="lhero1" type="Hero" gid="172" x="381" y="347.143" width="10" height="10"/>
+  <object id="395" name="rhero2" type="Hero" gid="172" x="220" y="438" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="6" name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="6.33267" y="352.319" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="7" name="spawns">
+  <object id="375" name="2_1" type="Spawn" gid="174" x="703" y="171" width="10" height="10"/>
+  <object id="363" name="1_1" type="Spawn" gid="174" x="702.333" y="532.163" width="10" height="10"/>
+ </objectgroup>
+</map>

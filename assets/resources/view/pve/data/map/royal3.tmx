@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="8" nextobjectid="396">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="1" name="图像图层 1" offsetx="0" offsety="-10">
+  <image source="../../../../map/royal3.png" width="720" height="1323"/>
+ </imagelayer>
+ <objectgroup id="2" name="general">
+  <object id="269" name="rgeneral1" type="General" gid="170" x="9.083" y="1162.74" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="3" name="gates">
+  <object id="278" name="1_1001_to_0_2" gid="174" x="-88.8337" y="-108.75" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="roads">
+  <object id="389" name="2" x="145.333" y="-232">
+   <polyline points="542.656,1064.88 447.023,1064.1 431.223,1077.27 432.748,1376.33 413.605,1394.06 -122.847,1388.78"/>
+  </object>
+  <object id="366" name="1" x="151.333" y="-237.334">
+   <polyline points="534.656,1067.88 438.357,1066.1 422.556,1047.27 424.081,994.333 403.605,976.723 -41.3813,976.773 -59.7007,1000.15 -62.3407,1140.24 -42.2873,1160.42 126.393,1155.47 147.74,1177.18 149.1,1371.27 123.793,1398.02 -128.18,1396.11"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="towers">
+  <object id="391" name="lhero3" type="Hero" gid="172" x="204.834" y="831" width="10" height="10"/>
+  <object id="393" name="lhero1" type="Hero" gid="172" x="658.398" y="1000" width="10" height="10"/>
+  <object id="395" name="rhero2" type="Hero" gid="172" x="475.333" y="1070.33" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="6" name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="5.666" y="1162.32" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="7" name="spawns">
+  <object id="375" name="2_2" type="Spawn" gid="174" x="691" y="836.33" width="10" height="10"/>
+  <object id="363" name="1_1" type="Spawn" gid="174" x="687.333" y="835.83" width="10" height="10"/>
+ </objectgroup>
+</map>

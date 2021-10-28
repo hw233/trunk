@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>关于GDK</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 65px;
+            color: #666666;
+            line-height: 24px;
+            padding-top: 40px;
+        }
+
+        #version {
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>GDK</h1>
+    <div>Game Developer Kit <span id="version">v</span></div>
+    <div>Author <a title="wenhonghuang@gmail.com">sthoo</a> Copyright 2019</div>
+    <script>
+        const version = require('../src/gdk_Version');
+        let label = document.getElementById('version');
+        label.textContent = " v" + version
+    </script>
+</body>
+
+</html>

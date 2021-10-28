@@ -1,0 +1,32 @@
+<ui-section>
+    <div class="header flex-1 layout horizontal center-center">
+        <ui-checkbox v-value="action.value.enabled.value" @click="clickEnable"></ui-checkbox>
+        <span :title="info&&info.tooltip" style="cursor:auto">{{actionName}}</span>
+        <span class="flex-1"></span>
+        <div :style="{color:getActionFinishTypeColor(info.finishType),cursor:'auto',fontSize:'8px'}">
+            <i :class="getActionFinishTypeIcon(info.finishType)" aria-hidden="true" :title="getActionFinishTypeTooltip(info.finishType)" @click="$event.stopPropagation();"> </i>
+        </div>
+        <ui-button v-el:dropdown class="tiny transparent" title="编辑动作代码，需要设置外部脚本编辑器" @click="editClick">
+            <i class="fa fa-pencil"></i>
+        </ui-button>
+        <ui-button v-el:dropdown class="tiny transparent" title="" @click="menuClick">
+            <i class="fa fa-cog"></i>
+        </ui-button>
+    </div>
+    <ui-hint v-if="info&&info.info" :class="[info.infoColor]" style="margin-left: 10px">{{info.info}}</ui-hint>
+    <template v-for="(key,prop) in action.value" v-if="prop.attrs.visible !== false">
+        <component :propname="key" :target.sync="prop" :is="prop.compType" v-if="prop.compType!='cc-array-prop'" @change="onPropChange" :tooltip="prop.attrs.tooltip"></component>
+        <ui-prop v-if="prop.compType=='cc-array-prop'" :propname="key" :tooltip="prop.attrs.tooltip" :name="prop.name" indent="1" v-readonly="prop.attrs.readonly" foldable>
+            <template v-if="!prop.values || prop.values.length <= 1">
+                <ui-num-input class="flex-1" type="int" min="0" :value="prop.value.length" :propname="key" @confirm="arraySizeChange"></ui-num-input>
+                <div class="child">
+                    <component v-for="(index,prop2) in prop.value" :is="prop2.compType" :propname="key" :target.sync="prop2" :indent="1" :index="index" @change="onArrayPropChange($event,index)">
+                    </component>
+                </div>
+            </template>
+            <template v-else>
+                <span>Difference</span>
+            </template>
+        </ui-prop>
+    </template>
+</ui-section>

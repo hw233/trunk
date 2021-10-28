@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="16" nextobjectid="377">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="7" name="图像图层 1" locked="1" offsetx="-20" offsety="-159">
+  <image source="../../../../map/zoulang.jpg" width="760" height="1598"/>
+ </imagelayer>
+ <objectgroup id="11" name="general">
+  <object id="269" name="rgeneral1" type="General" gid="170" x="85.0833" y="1268.41" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="13" name="gates">
+  <object id="278" name="1_1001_to_0_2" gid="174" x="-10.167" y="-119.417" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="1" name="roads">
+  <object id="327" name="111" x="706.667" y="226">
+   <polyline points="-76.6773,-191.789 -64.0463,-35.3 -88.014,95.3454 -136.138,140.529 -183.489,131.14 -304.837,135.001 -347.557,217.967 -351.644,565.97 -419.813,584.696 -598.021,586.381 -624.532,636.521 -606.066,683.258 -615.013,1034.96"/>
+  </object>
+  <object id="326" name="11" x="692" y="187.333">
+   <polyline points="-70.0113,-153.123 -73.1657,-9.48667 -49.5903,133.634 -108.036,188.857 -199.056,173.593 -309.343,191.649 -322.141,254.243 -314.454,343.321 -330.337,484.633 -314.788,597.627 -355.903,642.662 -535.184,627.615 -588.95,655.55 -587.882,790.836 -597.68,1072.28"/>
+  </object>
+  <object id="370" name="1" x="702.667" y="198.667">
+   <polyline points="-68.678,-159.79 -74.9236,162.967 -213.723,178.926 -312.01,164.982 -353.474,200.91 -337.337,380.633 -362.788,617.627 -571.617,630.217 -619.882,698.836 -616.894,813.862 -615.013,1062.95"/>
+  </object>
+  <object id="364" name="222" x="64" y="214.667">
+   <polyline points="295.99,-25.7887 298.387,133.437 284.932,301.884 296.695,510.202 250.317,589.632 140.906,611.065 25.653,636.685 24.3437,847.554 18.3206,1045.62"/>
+  </object>
+  <object id="365" name="22" x="74.6667" y="225.333">
+   <polyline points="274.656,-36.4557 267.72,68.1036 295.599,304.55 263.361,455.536 268.984,546.965 239.573,593.731 140.32,588.685 29.6773,600.888 17.628,704.99 18.3206,1045.62"/>
+  </object>
+  <object id="366" name="2" x="74.6667" y="225.333">
+   <polyline points="291.99,-37.7887 303.721,102.77 276.932,321.884 268.695,496.869 294.317,558.965 252.906,599.065 173.653,611.352 40.3433,602.221 9.294,654.657 33.755,896.194 16.9873,1038.95"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="towers">
+  <object id="359" name="rhero2" type="Hero" gid="172" x="218.333" y="894.667" width="10" height="10"/>
+  <object id="328" name="lhero1" type="Hero" gid="172" x="432.332" y="473.337" width="10" height="10"/>
+  <object id="376" name="rhero3" type="Hero" gid="172" x="489" y="294" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="83.6663" y="1267.99" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="2" name="spawns">
+  <object id="325" name="111_2" type="Spawn" gid="174" x="630" y="28.6667" width="10" height="10"/>
+  <object id="324" name="11_2" type="Spawn" gid="174" x="621" y="26.3327" width="10" height="10"/>
+  <object id="322" name="1_1" type="Spawn" gid="174" x="627.333" y="29.3337" width="10" height="10"/>
+  <object id="361" name="222_2" type="Spawn" gid="174" x="359" y="182.501" width="10" height="10"/>
+  <object id="362" name="22_2" type="Spawn" gid="174" x="352.665" y="178.831" width="10" height="10"/>
+  <object id="363" name="2_1" type="Spawn" gid="174" x="350.999" y="184.501" width="10" height="10"/>
+ </objectgroup>
+</map>

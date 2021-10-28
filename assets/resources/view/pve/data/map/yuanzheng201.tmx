@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="16" nextobjectid="403">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="0" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="7" name="图像图层 1" locked="1" offsetx="-13" offsety="-107">
+  <image source="F:/qiushengzhicheng/client/assets/resources/map/zhizhudongku1.jpg" width="760" height="1598"/>
+ </imagelayer>
+ <objectgroup id="11" name="general">
+  <object id="269" name="lgeneral1" type="General" gid="170" x="672.75" y="910.41" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="13" name="gates"/>
+ <objectgroup id="1" name="roads">
+  <object id="327" name="111" x="706.667" y="226">
+   <polyline points="-422.094,30.044 -437.713,131.7 -440.014,199.679 -437.805,350.529 -437.156,523.807 -440.17,642.668 -437.224,717.301 -371.644,791.97 -300.813,853.696 -196.021,750.714 -124.169,676.064 -90.199,675.521 -36.733,677.925"/>
+  </object>
+  <object id="367" name="11" x="713" y="228">
+   <polyline points="-439.094,28.544 -437.713,131.7 -440.014,199.679 -437.805,350.529 -437.156,523.807 -440.17,642.668 -437.224,717.301 -371.644,791.97 -300.813,853.696 -196.021,750.714 -124.169,676.064 -90.199,675.521 -36.733,677.925"/>
+  </object>
+  <object id="368" name="1" x="704" y="226">
+   <polyline points="-439.344,31.544 -437.713,131.7 -440.014,199.679 -437.805,350.529 -437.156,523.807 -440.17,642.668 -437.224,717.301 -371.644,791.97 -300.813,853.696 -196.021,750.714 -124.169,676.064 -90.199,675.521 -36.733,677.925"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="towers">
+  <object id="360" name="rhero5" type="Hero" gid="172" x="528.333" y="1111" width="10" height="10"/>
+  <object id="359" name="rhero4" type="Hero" gid="172" x="355" y="560.667" width="10" height="10"/>
+  <object id="349" name="lhero2" type="Hero" gid="172" x="413.666" y="936.334" width="10" height="10"/>
+  <object id="350" name="lhero3" type="Hero" gid="172" x="354" y="752.337" width="10" height="10"/>
+  <object id="328" name="lhero1" type="Hero" gid="172" x="279.666" y="1106.67" width="10" height="10"/>
+  <object id="363" name="lhero6" type="Hero" gid="172" x="172" y="661" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="672.333" y="905.99" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="2" name="spawns">
+  <object id="325" name="111_2" type="Spawn" gid="174" x="280" y="259.167" width="10" height="10"/>
+  <object id="324" name="11_2" type="Spawn" gid="174" x="269.333" y="260" width="10" height="10"/>
+  <object id="322" name="1_1" type="Spawn" gid="174" x="258.333" y="260.084" width="10" height="10"/>
+ </objectgroup>
+</map>

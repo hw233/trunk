@@ -1,0 +1,21 @@
+<div class="layout vertical">
+    <template v-for="(key,prop) in buildInfo">
+        <ui-prop :name="prop.name||key">
+            <ui-checkbox v-if="prop.type=='boolean'" v-value="prop.value"></ui-checkbox>
+            <ui-select v-if="prop.type=='select'" v-value="prop.value">
+                <option v-for="op in prop.option" :value="op[1]">{{op[0]}}</option>
+            </ui-select>
+            <span v-if="prop.type=='version'">
+                <ui-input v-value="version" style="width:80px"></ui-input>
+                <ui-input v-value="buildVersion" style="width:80px"></ui-input>
+                <!-- <span>.{{buildVersion.toString().padStart(3, '0')}}</span> -->
+            </span>
+            <ui-num-input v-if="prop.type=='number'" v-value="prop.value"></ui-num-input>
+            <ui-num-input v-if="prop.type=='int'" type="int" v-value="prop.value"></ui-num-input>
+            <ui-input v-if="prop.type=='string'" v-value="prop.value"></ui-input>
+            <span v-if="prop.type=='time'">{{prop.value}}</span>
+            <span v-if="prop.type=='timestamp'">{{new Date(prop.value).format("yyyy-MM-dd hh:mm:ss.S")}}</span>
+        </ui-prop>
+    </template>
+    <ui-button class="blue" style="margin:5px;" @click="onClick">发布</ui-button>
+</div>

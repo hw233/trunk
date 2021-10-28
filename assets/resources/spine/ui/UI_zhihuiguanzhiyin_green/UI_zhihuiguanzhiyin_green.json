@@ -1,0 +1,84 @@
+{
+"skeleton": { "hash": "OwhnF0Y5JnACQTIeXhcdZE91hgA", "spine": "3.7.92", "width": 0, "height": 0, "images": "", "audio": "Z:/6.特效/3.UI特效/指挥官技能圈指引" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "images/lv0001", "parent": "root", "length": 193.21, "rotation": 92.67, "x": 308.5, "y": -1.5 },
+	{ "name": "images/ok", "parent": "root", "length": 70.77, "rotation": 92.91, "x": -2.56, "y": 238.88 }
+],
+"slots": [
+	{ "name": "images/lv0001", "bone": "images/lv0001" },
+	{ "name": "images/ok", "bone": "images/ok" }
+],
+"skins": {
+	"default": {
+		"images/lv0001": {
+			"images/lv0001": { "width": 230, "height": 214 },
+			"images/lv0002": { "width": 230, "height": 214 },
+			"images/lv0003": { "width": 230, "height": 214 },
+			"images/lv0004": { "width": 230, "height": 214 },
+			"images/lv0005": { "width": 230, "height": 214 },
+			"images/lv0006": { "width": 230, "height": 214 },
+			"images/lv0007": { "width": 230, "height": 214 },
+			"images/lv0008": { "width": 230, "height": 214 },
+			"images/lv0009": { "width": 230, "height": 214 },
+			"images/lv0010": { "width": 230, "height": 214 },
+			"images/lv0011": { "width": 230, "height": 214 },
+			"images/lv0012": { "width": 230, "height": 214 },
+			"images/lv0013": { "width": 230, "height": 214 },
+			"images/lv0014": { "width": 230, "height": 214 }
+		},
+		"images/ok": {
+			"images/ok": { "x": -1.06, "y": -2.68, "rotation": -92.91, "width": 83, "height": 41 }
+		}
+	}
+},
+"animations": {
+	"stand": {
+		"slots": {
+			"images/lv0001": {
+				"attachment": [
+					{ "time": 0, "name": "images/lv0001" },
+					{ "time": 0.0333, "name": "images/lv0002" },
+					{ "time": 0.0667, "name": "images/lv0003" },
+					{ "time": 0.1, "name": "images/lv0004" },
+					{ "time": 0.1333, "name": "images/lv0005" },
+					{ "time": 0.1667, "name": "images/lv0006" },
+					{ "time": 0.2, "name": "images/lv0007" },
+					{ "time": 0.2333, "name": "images/lv0008" },
+					{ "time": 0.2667, "name": "images/lv0009" },
+					{ "time": 0.3, "name": "images/lv0010" },
+					{ "time": 0.3333, "name": "images/lv0011" },
+					{ "time": 0.3667, "name": "images/lv0012" },
+					{ "time": 0.4, "name": "images/lv0013" },
+					{ "time": 0.4333, "name": "images/lv0014" }
+				]
+			},
+			"images/ok": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.2, "color": "ffffff80" },
+					{ "time": 0.4333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "images/ok" }
+				]
+			}
+		},
+		"bones": {
+			"images/lv0001": {
+				"rotate": [
+					{ "time": 0, "angle": -92.67 }
+				],
+				"translate": [
+					{ "time": 0, "x": -308.07, "y": 1.02 }
+				]
+			},
+			"images/ok": {
+				"translate": [
+					{ "time": 0, "x": 0.78, "y": -130.28 }
+				]
+			}
+		}
+	}
+}
+}

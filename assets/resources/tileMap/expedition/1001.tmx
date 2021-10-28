@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="hexagonal" renderorder="right-down" width="11" height="30" tilewidth="144" tileheight="150" infinite="0" hexsidelength="70" staggeraxis="y" staggerindex="odd" nextlayerid="41" nextobjectid="335">
+ <tileset firstgid="1" name="mapAtals" tilewidth="144" tileheight="281" tilecount="44" columns="11">
+  <tileoffset x="0" y="42"/>
+  <image source="../mapAtals.png" width="1584" height="1124"/>
+ </tileset>
+ <tileset firstgid="45" name="cross" tilewidth="144" tileheight="242" tilecount="9" columns="3">
+  <tileoffset x="0" y="42"/>
+  <image source="../crossMapAtals.png" width="432" height="726"/>
+ </tileset>
+ <tileset firstgid="54" name="iceMap" tilewidth="144" tileheight="242" tilecount="7" columns="7">
+  <tileoffset x="0" y="42"/>
+  <image source="../iceMap.png" width="1008" height="242"/>
+ </tileset>
+ <tileset firstgid="61" name="water" tilewidth="144" tileheight="200" tilecount="1" columns="1">
+  <tileoffset x="0" y="42"/>
+  <image source="../water.png" width="144" height="200"/>
+ </tileset>
+ <layer id="40" name="地表" width="11" height="30">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,5,5,5,0,0,0,0,0,0,
+0,5,8,9,5,0,0,0,0,0,0,
+0,5,8,2,9,5,0,0,0,0,0,
+0,6,2,2,9,0,0,0,0,0,0,
+0,0,6,2,7,0,0,0,0,0,0,
+0,0,0,0,0,57,57,57,0,0,0,
+0,0,0,0,0,57,55,55,57,0,0,
+0,0,0,0,57,55,55,55,57,0,0,
+0,0,0,0,0,56,55,55,56,0,0,
+0,0,0,0,0,56,56,56,0,0,0,
+0,0,5,5,5,0,0,0,0,0,0,
+0,5,2,2,5,0,0,0,0,0,0,
+0,5,2,2,2,5,52,52,52,0,0,
+0,1,2,2,1,52,49,49,52,0,0,
+0,0,1,1,1,52,49,49,49,52,0,
+0,0,0,0,0,52,49,49,52,0,0,
+0,0,0,3,3,3,52,52,52,0,0,
+0,0,3,1,1,3,0,0,0,0,0,
+0,0,3,1,1,1,3,0,0,0,0,
+0,0,3,1,1,3,0,0,0,0,0,
+0,0,0,3,3,3,4,4,4,0,0,
+0,0,0,0,0,4,2,2,4,0,0,
+0,0,61,61,61,4,2,2,2,4,0,
+0,61,2,2,61,4,2,2,4,0,0,
+0,61,2,2,2,61,4,4,4,0,0,
+0,61,2,2,61,0,0,0,0,0,0,
+0,0,61,61,61,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="31" name="points">
+  <object id="328" name="10011" x="504" y="2970">
+   <point/>
+  </object>
+  <object id="329" name="10012" x="1080" y="2750">
+   <point/>
+  </object>
+  <object id="330" name="10013" x="648" y="2310">
+   <point/>
+  </object>
+  <object id="331" name="10014" x="1080" y="1870">
+   <point/>
+  </object>
+  <object id="332" name="10015" x="504" y="1650">
+   <point/>
+  </object>
+  <object id="333" name="10016" x="1008" y="1100">
+   <point/>
+  </object>
+  <object id="334" name="10017" x="504" y="550">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

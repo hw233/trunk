@@ -1,0 +1,55 @@
+{
+"skeleton": { "hash": "+BgGFJY1K9gPED7v3RcazsU3mOk", "spine": "3.7.92", "width": 91, "height": 98, "images": "./images/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "zd_mubeibg", "parent": "root", "length": 69.33, "rotation": 89.49, "x": -1.59, "y": -0.73 }
+],
+"slots": [
+	{ "name": "zd_mubeibg", "bone": "zd_mubeibg", "attachment": "zd_mubeibg" }
+],
+"skins": {
+	"default": {
+		"zd_mubeibg": {
+			"zd_mubeibg": { "x": 31.6, "y": -1.12, "rotation": -89.49, "width": 91, "height": 98 }
+		}
+	}
+},
+"animations": {
+	"atk_s": {
+		"bones": {
+			"zd_mubeibg": {
+				"scale": [
+					{ "time": 1, "x": 1, "y": 1 }
+				]
+			}
+		}
+	},
+	"hit_s": {
+		"bones": {
+			"zd_mubeibg": {
+				"scale": [
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			}
+		}
+	},
+	"stand_s": {
+		"bones": {
+			"zd_mubeibg": {
+				"scale": [
+					{ "time": 1.3333, "x": 1, "y": 1 }
+				]
+			}
+		}
+	},
+	"walk_s": {
+		"bones": {
+			"zd_mubeibg": {
+				"scale": [
+					{ "time": 1, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

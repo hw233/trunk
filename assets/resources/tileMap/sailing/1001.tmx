@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="hexagonal" renderorder="right-down" width="20" height="20" tilewidth="144" tileheight="150" infinite="0" hexsidelength="70" staggeraxis="y" staggerindex="odd" nextlayerid="43" nextobjectid="601">
+ <tileset firstgid="1" name="mapAtals" tilewidth="144" tileheight="281" tilecount="44" columns="11">
+  <tileoffset x="0" y="42"/>
+  <image source="../mapAtals.png" width="1584" height="1124"/>
+ </tileset>
+ <tileset firstgid="45" name="sea" tilewidth="144" tileheight="242" tilecount="6" columns="6">
+  <tileoffset x="0" y="42"/>
+  <image source="../sea.png" width="864" height="242"/>
+ </tileset>
+ <layer id="7" name="地表" width="20" height="20">
+  <data encoding="csv">
+50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,
+50,49,49,46,49,49,49,49,49,49,49,46,49,49,49,49,49,46,49,50,
+50,49,49,49,49,49,47,49,45,45,49,49,49,49,49,47,49,49,49,50,
+50,49,49,49,45,49,49,49,49,49,49,45,45,49,49,49,46,49,49,50,
+50,49,47,49,49,49,49,49,49,49,49,45,45,47,49,45,45,49,49,50,
+50,49,49,49,49,48,45,45,49,49,49,45,45,49,49,49,49,46,49,50,
+50,49,49,49,49,49,45,45,47,49,49,49,49,49,49,49,49,47,49,50,
+50,49,49,46,49,49,45,45,49,49,47,49,49,45,49,49,48,49,49,50,
+50,49,49,49,49,49,49,49,49,49,49,49,49,45,45,49,45,49,49,50,
+50,49,49,45,45,49,49,49,49,50,49,49,49,49,49,49,49,49,49,50,
+50,49,49,48,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,50,
+50,49,49,49,49,49,45,49,49,49,49,49,49,45,49,49,49,49,49,50,
+50,49,46,49,49,49,45,45,49,49,49,49,49,45,45,49,45,48,49,50,
+50,49,49,45,49,49,49,49,49,45,47,49,49,49,49,49,49,49,49,50,
+50,49,49,49,46,49,49,49,49,45,45,45,49,49,49,47,49,49,49,50,
+50,49,49,49,49,45,45,49,46,45,45,49,49,45,49,49,49,49,49,50,
+50,49,49,47,49,49,48,49,49,49,49,49,49,49,48,49,49,49,49,50,
+50,49,49,49,49,49,49,49,49,47,49,49,49,49,49,49,49,49,49,50,
+50,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,50,
+50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50
+</data>
+ </layer>
+ <objectgroup id="2" name="points">
+  <object id="292" name="0" x="1440" y="1100">
+   <point/>
+  </object>
+  <object id="478" name="1" x="1008" y="660">
+   <point/>
+  </object>
+  <object id="479" name="1" x="1152" y="660">
+   <point/>
+  </object>
+  <object id="480" name="1" x="936" y="770">
+   <point/>
+  </object>
+  <object id="481" name="1" x="1080" y="770">
+   <point/>
+  </object>
+  <object id="482" name="1" x="1224" y="770">
+   <point/>
+  </object>
+  <object id="483" name="1" x="1008" y="880">
+   <point/>
+  </object>
+  <object id="484" name="1" x="1152" y="880">
+   <point/>
+  </object>
+  <object id="485" name="2" x="1728" y="440">
+   <point/>
+  </object>
+  <object id="486" name="2" x="1872" y="440">
+   <point/>
+  </object>
+  <object id="487" name="2" x="1656" y="550">
+   <point/>
+  </object>
+  <object id="488" name="2" x="1800" y="550">
+   <point/>
+  </object>
+  <object id="489" name="2" x="1944" y="550">
+   <point/>
+  </object>
+  <object id="490" name="2" x="1728" y="660">
+   <point/>
+  </object>
+  <object id="491" name="2" x="1872" y="660">
+   <point/>
+  </object>
+  <object id="492" name="3" x="1440" y="1540">
+   <point/>
+  </object>
+  <object id="493" name="3" x="1584" y="1540">
+   <point/>
+  </object>
+  <object id="494" name="3" x="1368" y="1650">
+   <point/>
+  </object>
+  <object id="495" name="3" x="1512" y="1650">
+   <point/>
+  </object>
+  <object id="496" name="3" x="1656" y="1650">
+   <point/>
+  </object>
+  <object id="497" name="3" x="1440" y="1760">
+   <point/>
+  </object>
+  <object id="498" name="3" x="1584" y="1760">
+   <point/>
+  </object>
+  <object id="499" name="4" x="2016" y="880">
+   <point/>
+  </object>
+  <object id="500" name="4" x="1944" y="990">
+   <point/>
+  </object>
+  <object id="501" name="4" x="2088" y="990">
+   <point/>
+  </object>
+  <object id="502" name="5" x="1008" y="1320">
+   <point/>
+  </object>
+  <object id="503" name="5" x="936" y="1430">
+   <point/>
+  </object>
+  <object id="504" name="5" x="1080" y="1430">
+   <point/>
+  </object>
+  <object id="505" name="6" x="2016" y="1320">
+   <point/>
+  </object>
+  <object id="506" name="6" x="1944" y="1430">
+   <point/>
+  </object>
+  <object id="507" name="6" x="2088" y="1430">
+   <point/>
+  </object>
+  <object id="508" name="7" x="2232" y="550">
+   <point/>
+  </object>
+  <object id="509" name="7" x="2376" y="550">
+   <point/>
+  </object>
+  <object id="510" name="8" x="1224" y="330">
+   <point/>
+  </object>
+  <object id="511" name="8" x="1368" y="330">
+   <point/>
+  </object>
+  <object id="512" name="9" x="576" y="1100">
+   <point/>
+  </object>
+  <object id="513" name="9" x="720" y="1100">
+   <point/>
+  </object>
+  <object id="514" name="10" x="864" y="1760">
+   <point/>
+  </object>
+  <object id="515" name="10" x="1008" y="1760">
+   <point/>
+  </object>
+  <object id="516" name="11" x="720" y="440">
+   <point/>
+  </object>
+  <object id="517" name="12" x="576" y="1540">
+   <point/>
+  </object>
+  <object id="518" name="13" x="2016" y="1760">
+   <point/>
+  </object>
+  <object id="519" name="14" x="2376" y="1430">
+   <point/>
+  </object>
+  <object id="520" name="15" x="2376" y="990">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="path1" visible="0">
+  <object id="376" name="1" x="1368" y="990">
+   <point/>
+  </object>
+  <object id="377" name="2" x="1296" y="880">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="path2" visible="0">
+  <object id="521" name="1" x="1512" y="990">
+   <point/>
+  </object>
+  <object id="522" name="2" x="1656" y="990">
+   <point/>
+  </object>
+  <object id="523" name="3" x="1728" y="880">
+   <point/>
+  </object>
+  <object id="524" name="4" x="1800" y="770">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="25" name="path3" visible="0">
+  <object id="525" name="1" x="1368" y="1210">
+   <point/>
+  </object>
+  <object id="526" name="2" x="1440" y="1320">
+   <point/>
+  </object>
+  <object id="527" name="3" x="1368" y="1430">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="26" name="path4" visible="0">
+  <object id="528" name="1" x="1512" y="990">
+   <point/>
+  </object>
+  <object id="529" name="2" x="1656" y="990">
+   <point/>
+  </object>
+  <object id="530" name="3" x="1800" y="990">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="27" name="path5" visible="0">
+  <object id="531" name="1" x="1296" y="1100">
+   <point/>
+  </object>
+  <object id="532" name="2" x="1152" y="1100">
+   <point/>
+  </object>
+  <object id="533" name="3" x="1080" y="1210">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="28" name="path6" visible="0">
+  <object id="388" name="1" x="1512" y="1210">
+   <point/>
+  </object>
+  <object id="389" name="2" x="1656" y="1210">
+   <point/>
+  </object>
+  <object id="534" name="3" x="1800" y="1210">
+   <point/>
+  </object>
+  <object id="535" name="4" x="1944" y="1210">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="29" name="path7" visible="0">
+  <object id="536" name="1" x="1512" y="990">
+   <point/>
+  </object>
+  <object id="537" name="2" x="1656" y="990">
+   <point/>
+  </object>
+  <object id="538" name="3" x="1728" y="880">
+   <point/>
+  </object>
+  <object id="539" name="4" x="1800" y="770">
+   <point/>
+  </object>
+  <object id="540" name="5" x="1944" y="770">
+   <point/>
+  </object>
+  <object id="541" name="6" x="2088" y="770">
+   <point/>
+  </object>
+  <object id="542" name="7" x="2160" y="660">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="30" name="path8" visible="0">
+  <object id="543" name="1" x="1368" y="990">
+   <point/>
+  </object>
+  <object id="544" name="2" x="1440" y="880">
+   <point/>
+  </object>
+  <object id="545" name="3" x="1368" y="770">
+   <point/>
+  </object>
+  <object id="546" name="4" x="1440" y="660">
+   <point/>
+  </object>
+  <object id="547" name="5" x="1368" y="550">
+   <point/>
+  </object>
+  <object id="548" name="6" x="1440" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="31" name="path9" visible="0">
+  <object id="549" name="1" x="1296" y="1100">
+   <point/>
+  </object>
+  <object id="550" name="2" x="1224" y="1210">
+   <point/>
+  </object>
+  <object id="551" name="3" x="1080" y="1210">
+   <point/>
+  </object>
+  <object id="552" name="4" x="936" y="1210">
+   <point/>
+  </object>
+  <object id="553" name="5" x="792" y="1210">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="32" name="path10" visible="0">
+  <object id="554" name="1" x="1368" y="1210">
+   <point/>
+  </object>
+  <object id="555" name="2" x="1296" y="1320">
+   <point/>
+  </object>
+  <object id="556" name="3" x="1224" y="1430">
+   <point/>
+  </object>
+  <object id="557" name="4" x="1152" y="1540">
+   <point/>
+  </object>
+  <object id="558" name="5" x="1080" y="1650">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="33" name="path11" visible="0">
+  <object id="559" name="1" x="1368" y="990">
+   <point/>
+  </object>
+  <object id="560" name="2" x="1224" y="990">
+   <point/>
+  </object>
+  <object id="561" name="3" x="1080" y="990">
+   <point/>
+  </object>
+  <object id="562" name="4" x="936" y="990">
+   <point/>
+  </object>
+  <object id="563" name="5" x="864" y="880">
+   <point/>
+  </object>
+  <object id="564" name="6" x="792" y="770">
+   <point/>
+  </object>
+  <object id="565" name="7" x="720" y="660">
+   <point/>
+  </object>
+  <object id="566" name="8" x="648" y="550">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="34" name="path12" visible="0">
+  <object id="574" name="1" x="1368" y="1210">
+   <point/>
+  </object>
+  <object id="575" name="2" x="1296" y="1320">
+   <point/>
+  </object>
+  <object id="576" name="3" x="1224" y="1430">
+   <point/>
+  </object>
+  <object id="577" name="4" x="1152" y="1540">
+   <point/>
+  </object>
+  <object id="578" name="5" x="1008" y="1540">
+   <point/>
+  </object>
+  <object id="579" name="6" x="864" y="1540">
+   <point/>
+  </object>
+  <object id="580" name="7" x="720" y="1540">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="35" name="path13" visible="0">
+  <object id="581" name="1" x="1512" y="1210">
+   <point/>
+  </object>
+  <object id="582" name="2" x="1584" y="1320">
+   <point/>
+  </object>
+  <object id="583" name="3" x="1656" y="1430">
+   <point/>
+  </object>
+  <object id="584" name="4" x="1728" y="1540">
+   <point/>
+  </object>
+  <object id="585" name="5" x="1800" y="1650">
+   <point/>
+  </object>
+  <object id="586" name="6" x="1872" y="1760">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="36" name="path14" visible="0">
+  <object id="587" name="1" x="1584" y="1100">
+   <point/>
+  </object>
+  <object id="588" name="2" x="1656" y="1210">
+   <point/>
+  </object>
+  <object id="589" name="3" x="1800" y="1210">
+   <point/>
+  </object>
+  <object id="590" name="4" x="1944" y="1210">
+   <point/>
+  </object>
+  <object id="591" name="5" x="2088" y="1210">
+   <point/>
+  </object>
+  <object id="592" name="6" x="2232" y="1210">
+   <point/>
+  </object>
+  <object id="593" name="7" x="2304" y="1320">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="37" name="path15" visible="0">
+  <object id="594" name="1" x="1512" y="1210">
+   <point/>
+  </object>
+  <object id="595" name="2" x="1656" y="1210">
+   <point/>
+  </object>
+  <object id="596" name="3" x="1800" y="1210">
+   <point/>
+  </object>
+  <object id="597" name="4" x="1944" y="1210">
+   <point/>
+  </object>
+  <object id="598" name="5" x="2088" y="1210">
+   <point/>
+  </object>
+  <object id="599" name="6" x="2232" y="1210">
+   <point/>
+  </object>
+  <object id="600" name="7" x="2304" y="1100">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="38" name="path16" visible="0">
+  <object id="446" name="1" x="1512" y="1210">
+   <point/>
+  </object>
+  <object id="447" name="2" x="1440" y="1320">
+   <point/>
+  </object>
+  <object id="448" name="3" x="1512" y="1430">
+   <point/>
+  </object>
+  <object id="449" name="4" x="1584" y="1540">
+   <point/>
+  </object>
+  <object id="450" name="5" x="1656" y="1650">
+   <point/>
+  </object>
+  <object id="451" name="6" x="1584" y="1760">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="39" name="path17" visible="0">
+  <object id="452" name="1" x="1584" y="1100">
+   <point/>
+  </object>
+  <object id="453" name="2" x="1728" y="1100">
+   <point/>
+  </object>
+  <object id="454" name="3" x="1800" y="1210">
+   <point/>
+  </object>
+  <object id="455" name="4" x="1872" y="1320">
+   <point/>
+  </object>
+  <object id="456" name="5" x="2016" y="1320">
+   <point/>
+  </object>
+  <object id="457" name="6" x="2088" y="1430">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="40" name="path18" visible="0">
+  <object id="458" name="1" x="1512" y="990">
+   <point/>
+  </object>
+  <object id="459" name="2" x="1656" y="990">
+   <point/>
+  </object>
+  <object id="460" name="3" x="1800" y="990">
+   <point/>
+  </object>
+  <object id="461" name="4" x="1944" y="990">
+   <point/>
+  </object>
+  <object id="462" name="5" x="2088" y="990">
+   <point/>
+  </object>
+  <object id="463" name="6" x="2160" y="880">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="41" name="path19" visible="0">
+  <object id="464" name="1" x="1512" y="990">
+   <point/>
+  </object>
+  <object id="465" name="2" x="1584" y="880">
+   <point/>
+  </object>
+  <object id="466" name="3" x="1656" y="770">
+   <point/>
+  </object>
+  <object id="467" name="4" x="1728" y="660">
+   <point/>
+  </object>
+  <object id="468" name="5" x="1800" y="550">
+   <point/>
+  </object>
+  <object id="469" name="6" x="1728" y="440">
+   <point/>
+  </object>
+  <object id="470" name="7" x="1800" y="330">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="42" name="path20" visible="0">
+  <object id="471" name="1" x="1512" y="990">
+   <point/>
+  </object>
+  <object id="472" name="2" x="1440" y="880">
+   <point/>
+  </object>
+  <object id="473" name="3" x="1368" y="770">
+   <point/>
+  </object>
+  <object id="474" name="4" x="1440" y="660">
+   <point/>
+  </object>
+  <object id="475" name="5" x="1368" y="550">
+   <point/>
+  </object>
+  <object id="476" name="6" x="1440" y="440">
+   <point/>
+  </object>
+  <object id="477" name="7" x="1368" y="330">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

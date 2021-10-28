@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="72" height="128" tilewidth="10" tileheight="10" infinite="0" nextlayerid="8" nextobjectid="369">
+ <tileset firstgid="1" name="dimian001" tilewidth="10" tileheight="10" tilecount="231" columns="21">
+  <image source="dimian001.png" width="210" height="110"/>
+ </tileset>
+ <imagelayer id="1" name="图像图层 1">
+  <image source="../../../../map/tingchechang_0.png" width="720" height="1280"/>
+ </imagelayer>
+ <objectgroup id="2" name="general">
+  <object id="269" name="rgeneral1" type="General" gid="170" x="85.0833" y="1268.41" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="3" name="gates">
+  <object id="278" name="1_1001_to_0_2" gid="174" x="-10.167" y="-119.417" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="4" name="roads">
+  <object id="327" name="111" x="706.667" y="226">
+   <polyline points="-679.344,-103.789 -582.713,-79.3 -460.014,-91.3213 -194.805,-91.4707 -162.156,-32.86 -178.837,72.3344 -152.224,468.634 -178.311,680.637 -161.146,767.029 -190.354,802.714 -391.199,793.854 -416.399,760.258 -446.562,582.865 -420.455,402.631 -434.16,317.657 -466.658,285.953 -529.84,292.766 -584.985,278.222 -621.018,310.848 -599.753,466.761 -617.913,729.128 -605.301,867.605 -615.013,1034.96"/>
+  </object>
+  <object id="326" name="11" x="692" y="187.333">
+   <polyline points="-660.678,-54.4563 -558.499,-54.82 -288.257,-27.6993 -191.877,-45.7633 -137.369,-12.4763 -164.389,214.926 -168.01,424.982 -138.141,664.91 -154.454,801.988 -193.004,843.3 -288.122,847.627 -393.903,815.662 -416.517,773.282 -404.95,691.55 -431.882,517.503 -408.285,349.856 -452.616,313.725 -578.198,310.299 -613.563,344.473 -605.313,592.977 -597.68,1072.28"/>
+  </object>
+  <object id="323" name="1" x="188" y="193">
+   <polyline points="-158.677,-52.4567 -58.166,-33.8201 197.539,-54.566 327.783,-32.1687 368.689,137.553 344.109,550.9 346.779,824.624 187.985,839.631 101.016,808.803 83.932,727.274 101.446,551.513 70.7967,336.364 -9.357,311.569 -77.5425,324.93 -108.642,366.549 -83.123,735.303 -105.68,1060.29"/>
+  </object>
+  <object id="364" name="222" x="64" y="214.667">
+   <polyline points="-62.521,273.784 32.1363,284.228 20.0966,333.802 31.6897,486.763 18.3206,1045.62"/>
+  </object>
+  <object id="365" name="22" x="74.6667" y="225.333">
+   <polyline points="-66.188,267.117 30.4696,280.228 10.0966,333.802 20.023,452.763 18.3206,1045.62"/>
+  </object>
+  <object id="366" name="2" x="74.6667" y="225.333">
+   <polyline points="-63.5304,271.228 24.4691,270.486 15.7633,328.469 23.6897,501.43 16.9873,1038.95"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="towers">
+  <object id="367" name="rhero5" type="Hero" gid="172" x="205" y="408" width="10" height="10"/>
+  <object id="359" name="lhero4" type="Hero" gid="172" x="627" y="818" width="10" height="10"/>
+  <object id="328" name="lhero3" type="Hero" gid="172" x="626.999" y="997.337" width="10" height="10"/>
+  <object id="349" name="rhero2" type="Hero" gid="172" x="446.999" y="230.667" width="10" height="10"/>
+  <object id="360" name="rhero1" type="Hero" gid="172" x="175" y="601" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="6" name="protege">
+  <object id="347" name="1" type="Spawn" gid="218" x="83.6663" y="1267.99" width="10" height="10"/>
+ </objectgroup>
+ <objectgroup id="7" name="spawns">
+  <object id="325" name="111_2" type="Spawn" gid="174" x="25.0003" y="138" width="10" height="10"/>
+  <object id="324" name="11_2" type="Spawn" gid="174" x="16.0003" y="135.666" width="10" height="10"/>
+  <object id="322" name="1_1" type="Spawn" gid="174" x="22.3333" y="138.667" width="10" height="10"/>
+  <object id="361" name="222_2" type="Spawn" gid="174" x="4.667" y="500.168" width="10" height="10"/>
+  <object id="362" name="22_2" type="Spawn" gid="174" x="3.332" y="499.498" width="10" height="10"/>
+  <object id="363" name="2_1" type="Spawn" gid="174" x="2.666" y="503.168" width="10" height="10"/>
+ </objectgroup>
+</map>

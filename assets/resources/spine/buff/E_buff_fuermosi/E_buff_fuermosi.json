@@ -1,0 +1,68 @@
+{
+"skeleton": { "hash": "ynmoVLKcvVsaHQy6psnHMQM8SlI", "spine": "3.7.92", "width": 0, "height": 0, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "buff", "parent": "root" },
+	{ "name": "di", "parent": "root" }
+],
+"slots": [
+	{ "name": "di", "bone": "di" },
+	{ "name": "buff", "bone": "buff", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"buff": {
+			"images/skill1/10075": { "width": 230, "height": 210 },
+			"images/skill1/10077": { "width": 230, "height": 210 },
+			"images/skill1/10079": { "width": 230, "height": 210 },
+			"images/skill1/10081": { "width": 230, "height": 210 },
+			"images/skill1/10083": { "width": 230, "height": 210 },
+			"images/skill1/10085": { "width": 230, "height": 210 },
+			"images/skill1/10087": { "width": 230, "height": 210 },
+			"images/skill1/10089": { "width": 230, "height": 210 },
+			"images/skill1/10091": { "width": 230, "height": 210 },
+			"images/skill1/10093": { "width": 230, "height": 210 },
+			"images/skill1/10095": { "width": 230, "height": 210 },
+			"images/skill1/10097": { "width": 230, "height": 210 },
+			"images/skill1/10099": { "width": 230, "height": 210 },
+			"images/skill1/10101": { "width": 230, "height": 210 },
+			"images/skill1/10103": { "width": 230, "height": 210 },
+			"images/skill1/10105": { "width": 230, "height": 210 }
+		},
+		"di": {
+			"images/skill1/di": { "x": 0.5, "width": 273, "height": 250 }
+		}
+	}
+},
+"animations": {
+	"hit": {
+		"slots": {
+			"buff": {
+				"attachment": [
+					{ "time": 0, "name": "images/skill1/10075" },
+					{ "time": 0.0667, "name": "images/skill1/10077" },
+					{ "time": 0.1333, "name": "images/skill1/10079" },
+					{ "time": 0.2, "name": "images/skill1/10081" },
+					{ "time": 0.2667, "name": "images/skill1/10083" },
+					{ "time": 0.3333, "name": "images/skill1/10085" },
+					{ "time": 0.4, "name": "images/skill1/10087" },
+					{ "time": 0.4667, "name": "images/skill1/10089" },
+					{ "time": 0.5333, "name": "images/skill1/10091" },
+					{ "time": 0.6, "name": "images/skill1/10093" },
+					{ "time": 0.6667, "name": "images/skill1/10095" },
+					{ "time": 0.7333, "name": "images/skill1/10097" },
+					{ "time": 0.8, "name": "images/skill1/10099" },
+					{ "time": 0.8667, "name": "images/skill1/10101" },
+					{ "time": 0.9333, "name": "images/skill1/10103" },
+					{ "time": 0.9667, "name": "images/skill1/10105" }
+				]
+			},
+			"di": {
+				"attachment": [
+					{ "time": 0, "name": "images/skill1/di" }
+				]
+			}
+		}
+	}
+}
+}

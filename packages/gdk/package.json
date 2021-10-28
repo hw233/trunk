@@ -1,0 +1,53 @@
+{
+    "name": "gdk",
+    "version": "0.1.0",
+    "description": "Game Developer Kit;",
+    "author": "sthoo.huang",
+    "main": "main.js",
+    "main-menu": {
+        "GDK/FSM": {
+            "message": "gdk-fsm:open"
+        },
+        "GDK/i18n": {
+            "message": "i18n:open"
+        },
+        "GDK/Public": {
+            "message": "gdk-public:open"
+        },
+        "GDK/Builder": {
+            "message": "gdk-builder:open"
+        },
+        "GDK/Cleaner": {
+            "message": "gdk-clean:open"
+        },
+        "GDK/Batch Compression Textures": {
+            "message": "gdk-texture:open"
+        },
+        "GDK/关于": {
+            "message": "gdk:open"
+        }
+    },
+    "scene-script": "scripts/scene-walker.js",
+    "panel": {
+        "main": "panel/index.html",
+        "type": "simple",
+        "title": "关于",
+        "width": 400,
+        "height": 200
+    },
+    "reload": {
+        "ignore": [
+            "runtime-res/**/*",
+            "src/**/*"
+        ]
+    },
+    "dependencies": {
+        "buffer": "^5.4.3",
+        "ham-amf": "1.0.4",
+        "mathjs-expression-parser": "^1.0.2",
+        "md5": "^2.3.0",
+        "mobile-device-detect": "^0.3.3",
+        "pako": "1.0.7",
+        "xxtea-node": "^1.1.4"
+    }
+}
